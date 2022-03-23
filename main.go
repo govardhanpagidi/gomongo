@@ -89,7 +89,7 @@ func FirstTx() {
 }
 
 func (p *Persister) BeginTX(ctx context.Context) (context.Context, error) {
-	defer p.client.Disconnect(ctx)
+	//defer p.client.Disconnect(ctx)
 	//Start session
 	sesson, err := p.client.StartSession()
 	if err != nil {
@@ -195,7 +195,7 @@ func TestTransactionCommit() {
 // Helpers
 
 func getMongoClient() (*mongo.Client, error) {
-	uri := "mongodb+srv://reddy:reddy@cluster0.ih8do.mongodb.net/test?authSource=admin&replicaSet=atlas-dm1d4p-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
+	uri := "mongodb+srv://<username>:<password>@localhost:27017/test?authSource=admin&replicaSet=atlas-dm1d4p-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
 	if os.Getenv("DATABASE_URL") != "" {
 		uri = os.Getenv("DATABASE_URL")
 	}
