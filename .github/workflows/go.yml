@@ -23,9 +23,10 @@ jobs:
 
     - name: Build
       run: | 
-        ls -l 
+        cd cfn-resources
         go build -v ./...
 
     - name: Test
       run: | 
+        cd cfn-resources
         go test -v ./...
