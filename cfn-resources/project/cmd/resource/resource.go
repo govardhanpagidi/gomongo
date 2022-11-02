@@ -401,7 +401,7 @@ func List(req handler.Request, prevModel *Model, currentModel *Model) (handler.P
 		m.Name = &project.Name
 		m.Id = &project.ID
 		m.ApiKeys = currentModel.ApiKeys
-		event, err2, model, failed := readProjectSettings(err, client, project.ID, &m)
+		event, err2, model, failed := readProjectSettings(client, project.ID, &m)
 		if failed {
 			return event, err2
 		}
@@ -454,7 +454,7 @@ func getProject(name string, client *mongodbatlas.Client, currentModel *Model, e
 		currentModel.Id = &project.ID
 	}
 
-	event, err2, model, failed := readProjectSettings(err, client, id, currentModel)
+	event, err2, model, failed := readProjectSettings(client, id, currentModel)
 
 	if failed {
 		return event, err2, true, model
@@ -463,7 +463,7 @@ func getProject(name string, client *mongodbatlas.Client, currentModel *Model, e
 	return handler.ProgressEvent{}, nil, false, model
 }
 
-func readProjectSettings(err error, client *mongodbatlas.Client, id string, currentModel *Model) (handler.ProgressEvent, error, *Model, bool) {
+func readProjectSettings(client *mongodbatlas.Client, id string, currentModel *Model) (handler.ProgressEvent, error, *Model, bool) {
 	//Get teams from project
 	teamsAssigned, res, err := client.Projects.GetProjectTeamsAssigned(context.Background(), id)
 	if err != nil {
