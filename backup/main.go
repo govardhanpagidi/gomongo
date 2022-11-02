@@ -45,7 +45,7 @@ func FirstTx() {
 		log.Fatal(err)
 	}
 
-	log.Println("Doc inserted")
+	// log.Println("Doc inserted")
 
 	p.BeginTX(ctx)
 
@@ -57,13 +57,13 @@ func FirstTx() {
 			return err
 		}
 		if res.DeletedCount != 1 {
-			log.Println("delete failed, expected 1 but got", res.DeletedCount)
+			// log.Println("delete failed, expected 1 but got", res.DeletedCount)
 			return err
 		}
 
 		if result, err = coll.UpdateOne(sc, bson.M{"year": 2003}, update); err != nil {
 
-			log.Println(err)
+			// log.Println(err)
 			return err
 		}
 
@@ -142,7 +142,7 @@ func TestTransactionCommit() {
 		log.Fatal(err)
 	}
 
-	log.Println("Doc inserted")
+	// log.Println("Doc inserted")
 
 	if session, err = client.StartSession(); err != nil {
 		log.Fatal(err)
@@ -156,23 +156,23 @@ func TestTransactionCommit() {
 
 		res, _ := collection.DeleteOne(ctx, bson.M{"_id": id})
 		if res.DeletedCount != 1 {
-			log.Println("delete failed, expected 1 but got", res.DeletedCount)
+			// log.Println("delete failed, expected 1 but got", res.DeletedCount)
 		}
 
 		if result, err = collection.UpdateOne(sc, bson.M{"year": 2003}, update); err != nil {
-			log.Println(err)
+			// log.Println(err)
 		}
 		if result.MatchedCount != 1 || result.ModifiedCount != 1 || err != nil {
-			log.Println("replace failed, expected 1 but got", result.MatchedCount)
+			// log.Println("replace failed, expected 1 but got", result.MatchedCount)
 			if session.AbortTransaction(sc); err != nil {
 				log.Fatal(err)
 			}
-			log.Println("aborting transaction")
+			// log.Println("aborting transaction")
 		} else {
 			if err = session.CommitTransaction(sc); err != nil {
 				log.Fatal(err)
 			}
-			log.Println("Committed transaction")
+			// log.Println("Committed transaction")
 		}
 
 		return nil

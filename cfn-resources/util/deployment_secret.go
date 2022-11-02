@@ -3,7 +3,6 @@ package util
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"os"
 
 	"github.com/aws-cloudformation/cloudformation-cli-go-plugin/cfn/handler"
@@ -29,9 +28,9 @@ func CreateDeploymentSecret(req *handler.Request, cfnID *ResourceIdentifier, pub
 	deploySecretString, err := json.Marshal(deploySecret)
 	fmt.Printf("deploySecretString: %s", deploySecretString)
 
-	log.Println("===============================================")
+	// log.Println("===============================================")
 	fmt.Printf("%+v", os.Environ())
-	log.Println("===============================================")
+	// log.Println("===============================================")
 
 	//sess := credentials.SessionFromCredentialsProvider(creds)
 	// create a new secret from this struct with the json string
@@ -73,7 +72,7 @@ func GetApiKeyFromDeploymentSecret(req *handler.Request, secretName string) (Dep
 		fmt.Printf("Error --- %v", err.Error())
 		return DeploymentSecret{}, err
 	}
-	fmt.Println(*output.SecretString)
+	// fmt.Println(*output.SecretString)
 	var key DeploymentSecret
 	err = json.Unmarshal([]byte(*output.SecretString), &key)
 	if err != nil {

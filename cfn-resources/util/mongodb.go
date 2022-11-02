@@ -35,7 +35,7 @@ func GetMongoDBClientEnvAuth(mongodbURI string) (*mongo.Client, error) {
 		fmt.Printf("Got error connecting to driver: %+v", err)
 		return nil, err
 	}
-	log.Println("setupMongoDBClient was able to ping primary")
+	// log.Println("setupMongoDBClient was able to ping primary")
 	return client, nil
 }
 
@@ -83,7 +83,7 @@ func getMongoDBClientAWSAuth(mongodbURI string, req *handler.Request, roleToAssu
 		fmt.Printf("Got error connecting to driver: %+v", err)
 		return nil, err
 	}
-	log.Println("setupMongoDBClient was able to ping primary")
+	// log.Println("setupMongoDBClient was able to ping primary")
 	return client, nil
 }
 

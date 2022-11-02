@@ -49,7 +49,7 @@ func init() {
 	flag.StringVar(&clusterName, "clusterName", "", "Cluster Name")
 }
 func TestMongo(t *testing.T) {
-	log.Println("mongodb_test log start")
+	// log.Println("mongodb_test log start")
 	fmt.Printf("projectID=%v clusterName=%v", projectID, clusterName)
 	flag.Parse()
 	t.Run("test test", func(t *testing.T) {
