@@ -23,14 +23,8 @@ jobs:
 
     - name: Build
       run: | 
-        ls -l
-        cd cfn-resources/project/cmd
-        ls -l
         go build -v ./...
 
     - name: Test
       run: | 
-        ls -l
-        cd cfn-resources/project/cmd
-        ls -l
         go test -v ./...
