@@ -31,6 +31,7 @@ func FirstTx() {
 
 	var id = primitive.NewObjectID()
 	var doc = bson.M{"_id": id, "hometown": "Atlanta", "year": int32(2003)}
+	var result *mongo.UpdateResult
 	var update = bson.D{{Key: "$set", Value: bson.D{{Key: "year", Value: int32(2004)}}}}
 	if client, err = getMongoClient(); err != nil {
 		log.Fatal(err)
