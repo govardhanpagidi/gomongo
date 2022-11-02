@@ -82,5 +82,5 @@ func SetupLogger(loggerPrefix string) {
 	log.SetFormatter(&log.JSONFormatter{})
 	log.SetLevel(getLogLevel())
 	log.Info("INFO setLogger")
-	// log.Debugf("DEBUG setLogger")
+	log.Debug("DEBUG setLogger")
 }
