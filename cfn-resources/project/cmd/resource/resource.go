@@ -191,7 +191,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		for _, team := range removeTeams {
 			_, err := client.Teams.RemoveTeamFromProject(context.Background(), projectId, team.TeamID)
 			if err != nil {
-				log.Debug("Error: %v", projectId, err)
+				log.Debugf("Error: %v", projectId, err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while deleting team from project",
@@ -213,7 +213,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		for _, team := range changedTeams {
 			_, _, err = client.Teams.UpdateTeamRoles(context.Background(), projectId, team.TeamID, &mongodbatlas.TeamUpdateRoles{RoleNames: team.RoleNames})
 			if err != nil {
-				log.Debug("Error: %v", err)
+				log.Debugf("Error: %v", err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while updating team roles in project",
@@ -226,7 +226,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		//Get APIKeys from project
 		projectApiKeys, _, err := client.ProjectAPIKeys.List(context.Background(), projectId, &mongodbatlas.ListOptions{ItemsPerPage: 1000, IncludeCount: true})
 		if err != nil {
-			log.Debug("Error: %v", projectId, err)
+			log.Debugf("Error: %v", projectId, err)
 			return handler.ProgressEvent{
 				OperationStatus:  handler.Failed,
 				Message:          "Error while finding api keys in project",
@@ -241,7 +241,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		for _, key := range removeKeys {
 			_, err = client.ProjectAPIKeys.Unassign(context.Background(), projectId, key.Key)
 			if err != nil {
-				log.Debug("Error: %v", err)
+				log.Debugf("Error: %v", err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while Un-assigning Key to project",
@@ -467,7 +467,7 @@ func readProjectSettings(err error, client *mongodbatlas.Client, id string, curr
 	//Get teams from project
 	teamsAssigned, res, err := client.Projects.GetProjectTeamsAssigned(context.Background(), id)
 	if err != nil {
-		log.Debug("ProjectId : %v, Error: %v", id, err)
+		log.Debugf("ProjectId : %v, Error: %v", id, err)
 		return progress_events.GetFailedEventByResponse(err.Error(),
 			res.Response), nil, nil, true
 	}
@@ -475,14 +475,14 @@ func readProjectSettings(err error, client *mongodbatlas.Client, id string, curr
 	//Get APIKeys from project
 	projectApiKeys, res, err := client.ProjectAPIKeys.List(context.Background(), id, &mongodbatlas.ListOptions{ItemsPerPage: 1000, IncludeCount: true})
 	if err != nil {
-		log.Debug("Error: %v", id, err)
+		log.Debugf("Error: %v", id, err)
 		return progress_events.GetFailedEventByResponse(err.Error(),
 			res.Response), nil, nil, true
 	}
 
 	projectSettings, _, err := client.Projects.GetProjectSettings(context.Background(), id)
 	if err != nil {
-		log.Debug("Error: %v", id, err)
+		log.Debugf("Error: %v", id, err)
 		return progress_events.GetFailedEventByResponse(err.Error(),
 			res.Response), nil, nil, true
 	}
