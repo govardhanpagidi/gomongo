@@ -25,8 +25,3 @@ jobs:
       run: | 
         cd cfn-resources
         go build -v ./...
-
-    - name: Test
-      run: | 
-        cd cfn-resources
-        go test -v ./...
