@@ -1,12 +1,14 @@
 package util
 
 import (
+	"fmt"
+	"os"
+	"strings"
+
 	"github.com/Sectorbob/mlab-ns2/gae/ns/digest"
 	"github.com/aws-cloudformation/cloudformation-cli-go-plugin/cfn/logging"
 	log "github.com/sirupsen/logrus"
 	"go.mongodb.org/atlas/mongodbatlas"
-	"os"
-	"strings"
 )
 
 const (
@@ -17,7 +19,7 @@ const (
 // and returns "US_EAST_1" -- i.e. a valid Atlas region
 func EnsureAtlasRegion(region string) string {
 	r := strings.ToUpper(strings.Replace(string(region), "-", "_", -1))
-	log.Printf("EnsureAtlasRegion--- region:%s r:%s", region, r)
+	fmt.Printf("EnsureAtlasRegion--- region:%s r:%s", region, r)
 	return r
 }
 
@@ -25,13 +27,13 @@ func EnsureAtlasRegion(region string) string {
 // and returns "us-east-1" -- i.e. a valid AWS region
 func EnsureAWSRegion(region string) string {
 	r := strings.ToLower(strings.Replace(string(region), "_", "-", -1))
-	log.Printf("EnsureAWSRegion--- region:%s r:%s", region, r)
+	fmt.Printf("EnsureAWSRegion--- region:%s r:%s", region, r)
 	return r
 }
 
 func CreateMongoDBClient(publicKey, privateKey string) (*mongodbatlas.Client, error) {
 	// setup a transport to handle digest
-	log.Printf("CreateMongoDBClient--- publicKey:%s", publicKey)
+	fmt.Printf("CreateMongoDBClient--- publicKey:%s", publicKey)
 	transport := digest.NewTransport(publicKey, privateKey)
 
 	// initialize the client
@@ -67,7 +69,7 @@ func getLogLevel() log.Level {
 		level, err = log.ParseLevel(defaultLogLevel)
 		return level
 	}
-	log.Printf("getLogLevel() levelString=%s level=%v", levelString, level)
+	fmt.Printf("getLogLevel() levelString=%s level=%v", levelString, level)
 	return level
 }
 
