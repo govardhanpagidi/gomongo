@@ -40,7 +40,7 @@ func ValidateModel(event constants.Event, def ValidatorDefinition, model interfa
 
 	for _, field := range fields {
 		if fieldIsEmpty(model, field) {
-			requiredFields = fmt.Sprintf("%s %s", requiredFields, field)
+			requiredFields = fmt.Sprintf("%v %v", requiredFields, field)
 		}
 	}
 
@@ -48,7 +48,7 @@ func ValidateModel(event constants.Event, def ValidatorDefinition, model interfa
 		return nil
 	}
 
-	progressEvent := progress_events.GetFailedEventByCode(fmt.Sprintf("The next fields are required%s", requiredFields),
+	progressEvent := progress_events.GetFailedEventByCode(fmt.Sprintf("The next fields are required%v", requiredFields),
 		cloudformation.HandlerErrorCodeInvalidRequest)
 
 	return &progressEvent

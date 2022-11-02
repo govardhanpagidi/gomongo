@@ -41,7 +41,7 @@ func ParseResourceIdentifier(resourceID string) (*ResourceIdentifier, error) {
 	parts := strings.Split(resourceID, "+")
 
 	if len(parts) < 4 {
-		return &r, fmt.Errorf("Unable to parse input to resource identifier:%s", resourceID)
+		return &r, fmt.Errorf("Unable to parse input to resource identifier:%v", resourceID)
 	}
 	r.ServiceName = parts[0]
 	r.DeploymentID = parts[1]
@@ -73,7 +73,7 @@ func ParseResourceIdentifier(resourceID string) (*ResourceIdentifier, error) {
 func NewResourceIdentifier(resourceType string, resourceID string, parent *ResourceIdentifier) *ResourceIdentifier {
 
 	deployID := xid.New()
-	fmt.Printf("NewResourceIdentifier new deployID:%s", deployID.String())
+	fmt.Printf("NewResourceIdentifier new deployID:%v", deployID.String())
 	r := ResourceIdentifier{
 		DeploymentID: deployID.String(),
 		ResourceType: resourceType,

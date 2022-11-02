@@ -93,7 +93,7 @@ and use it to run a db command. This works by creating a temporary
 db-user to connect to the cluster
 */
 func ListDatabaseNamesByClusterName(client *mongodbatlas.Client, req *handler.Request, projectID string, clusterName string, roleToAssumeArn string) ([]string, error) {
-	fmt.Printf("ListDatabaseNames projectID:%s, clusterName:%s", projectID, clusterName)
+	fmt.Printf("ListDatabaseNames projectID:%v, clusterName:%v", projectID, clusterName)
 	var databases []string
 
 	// Lookup the mongodb+srv from the atlas client and clustername
@@ -101,7 +101,7 @@ func ListDatabaseNamesByClusterName(client *mongodbatlas.Client, req *handler.Re
 	if err != nil {
 		return databases, err
 	}
-	fmt.Printf("ListDatabaseNames - cluster lookedup SrvAddress:%s", cluster.SrvAddress)
+	fmt.Printf("ListDatabaseNames - cluster lookedup SrvAddress:%v", cluster.SrvAddress)
 	return ListDatabaseNames(req, cluster.SrvAddress, roleToAssumeArn)
 }
 
