@@ -24,5 +24,5 @@ jobs:
         run: go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.47.3
       - name: Run golangci-lint
         run: |
-         cd cfn-resources
+         cd cfn-resources/project/cmd
          golangci-lint run --version --verbose --out-format=github-actions
