@@ -2,12 +2,13 @@ package main
 
 import (
 	"context"
+	"log"
+	"os"
+
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"log"
-	"os"
 )
 
 var err error
@@ -30,7 +31,6 @@ func FirstTx() {
 
 	var id = primitive.NewObjectID()
 	var doc = bson.M{"_id": id, "hometown": "Atlanta", "year": int32(2003)}
-	var result *mongo.UpdateResult
 	var update = bson.D{{Key: "$set", Value: bson.D{{Key: "year", Value: int32(2004)}}}}
 	if client, err = getMongoClient(); err != nil {
 		log.Fatal(err)
