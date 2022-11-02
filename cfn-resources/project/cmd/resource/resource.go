@@ -255,7 +255,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		for _, key := range newApiKeys {
 			_, err = client.ProjectAPIKeys.Assign(context.Background(), projectId, key.Key, key.ApiKeys)
 			if err != nil {
-				log.Debugf("Error: %v", err)
+				log.Debug("Error: %v", err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while Assigning Key to project",
