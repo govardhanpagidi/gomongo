@@ -22,9 +22,15 @@ jobs:
         go-version: 1.18
 
     - name: Build
-      run: go build -v ./...
+      run: | 
+        ls -l
+        cd cfn-resources/project/cmd
+        ls -l
+        go build -v ./...
 
     - name: Test
       run: | 
+        ls -l
         cd cfn-resources/project/cmd
+        ls -l
         go test -v ./...
