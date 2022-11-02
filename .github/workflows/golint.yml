@@ -25,4 +25,4 @@ jobs:
       - name: Run golangci-lint
         run: |
          cd cfn-resources/project/cmd
-         golangci-lint run --version --verbose --out-format=github-actions
+         golangci-lint run --version --verbose --out-format=github-actions -v --print-issued-lines --print-linter-name 
