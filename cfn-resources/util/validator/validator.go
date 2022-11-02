@@ -2,12 +2,13 @@ package validator
 
 import (
 	"fmt"
+	"reflect"
+	"strings"
+
 	"github.com/aws-cloudformation/cloudformation-cli-go-plugin/cfn/handler"
 	"github.com/aws/aws-sdk-go/service/cloudformation"
 	"github.com/mongodb/mongodbatlas-cloudformation-resources/util/constants"
 	progress_events "github.com/mongodb/mongodbatlas-cloudformation-resources/util/progress_event"
-	"reflect"
-	"strings"
 )
 
 type ValidatorDefinition interface {
@@ -61,7 +62,7 @@ func fieldIsEmpty(model interface{}, field string) bool {
 		r := reflect.ValueOf(model)
 
 		for _, f := range fields {
-			fmt.Println(f)
+			fmt.Printf("%v", f)
 			baseProperty := reflect.Indirect(r).FieldByName(f)
 
 			if baseProperty.IsNil() {

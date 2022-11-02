@@ -80,6 +80,6 @@ func GetApiKeyFromDeploymentSecret(req *handler.Request, secretName string) (Dep
 		fmt.Printf("Error --- %v", err.Error())
 		return key, err
 	}
-	fmt.Println("%v", key)
+	fmt.Printf("%v", key)
 	return key, nil
 }
