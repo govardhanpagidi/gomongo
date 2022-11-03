@@ -1,9 +1,9 @@
 name: golangci-lint-415
 on:
   push:
-    branches:
-      - master
+    branches: [ "master" , "INT**"]
   pull_request:
+    branches: [ "master", "INT**" ]
 jobs:
   # ...
   lint-go:
