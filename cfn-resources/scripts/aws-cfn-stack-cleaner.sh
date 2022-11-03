@@ -49,6 +49,6 @@ else
         echo "  -  \"stack\": \"${stack}\""
         echo "     \"update-termination-protection\": \"${term_resp}\""
         echo "     \"delete-stack\": \"${delete_resp}\""
-    done < <(printf '%v\n' "${STACKS}")
+    done < <(printf '%s\n' "${STACKS}")
 fi
 

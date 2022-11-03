@@ -2,13 +2,12 @@ package validator
 
 import (
 	"fmt"
-	"reflect"
-	"strings"
-
 	"github.com/aws-cloudformation/cloudformation-cli-go-plugin/cfn/handler"
 	"github.com/aws/aws-sdk-go/service/cloudformation"
 	"github.com/mongodb/mongodbatlas-cloudformation-resources/util/constants"
 	progress_events "github.com/mongodb/mongodbatlas-cloudformation-resources/util/progress_event"
+	"reflect"
+	"strings"
 )
 
 type ValidatorDefinition interface {
@@ -40,7 +39,7 @@ func ValidateModel(event constants.Event, def ValidatorDefinition, model interfa
 
 	for _, field := range fields {
 		if fieldIsEmpty(model, field) {
-			requiredFields = fmt.Sprintf("%v %v", requiredFields, field)
+			requiredFields = fmt.Sprintf("%s %s", requiredFields, field)
 		}
 	}
 
@@ -48,7 +47,7 @@ func ValidateModel(event constants.Event, def ValidatorDefinition, model interfa
 		return nil
 	}
 
-	progressEvent := progress_events.GetFailedEventByCode(fmt.Sprintf("The next fields are required%v", requiredFields),
+	progressEvent := progress_events.GetFailedEventByCode(fmt.Sprintf("The next fields are required%s", requiredFields),
 		cloudformation.HandlerErrorCodeInvalidRequest)
 
 	return &progressEvent
@@ -62,7 +61,7 @@ func fieldIsEmpty(model interface{}, field string) bool {
 		r := reflect.ValueOf(model)
 
 		for _, f := range fields {
-			fmt.Printf("%v", f)
+			fmt.Println(f)
 			baseProperty := reflect.Indirect(r).FieldByName(f)
 
 			if baseProperty.IsNil() {

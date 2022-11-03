@@ -6,11 +6,11 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 	//"go.mongodb.org/mongo-driver/mongo/readpref"
 	"context"
-	"flag"
-	"fmt"
 	"log"
-	"os"
 	"testing"
+	//"fmt"
+	"flag"
+	"os"
 )
 
 var bgCtx = context.Background()
@@ -49,20 +49,20 @@ func init() {
 	flag.StringVar(&clusterName, "clusterName", "", "Cluster Name")
 }
 func TestMongo(t *testing.T) {
-	// log.Println("mongodb_test log start")
-	fmt.Printf("projectID=%v clusterName=%v", projectID, clusterName)
+	log.Println("mongodb_test log start")
+	log.Printf("projectID=%v clusterName=%v", projectID, clusterName)
 	flag.Parse()
 	t.Run("test test", func(t *testing.T) {
 		atlasClient, err := setupAtlasClient()
 		if err != nil {
 			panic(err)
 		}
-		fmt.Printf("Did it work? atlasClient: %#+v", atlasClient)
+		log.Printf("Did it work? atlasClient: %#+v", atlasClient)
 		dbs, err := ListDatabaseNames(atlasClient, &projectID, &clusterName)
 		if err != nil {
 			panic(err)
 		}
-		fmt.Printf("dbs:%+v", dbs)
+		log.Printf("dbs:%+v", dbs)
 
 	})
 

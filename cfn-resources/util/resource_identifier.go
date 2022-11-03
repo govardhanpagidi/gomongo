@@ -2,9 +2,9 @@ package util
 
 import (
 	"fmt"
-	"strings"
-
 	"github.com/rs/xid"
+	"log"
+	"strings"
 )
 
 // Resource id's are used to generate
@@ -22,7 +22,7 @@ type ResourceIdentifier struct {
 	Parent       *ResourceIdentifier
 }
 
-// Note string version is "+" delimited string of the fields, in proper heirachry
+//Note string version is "+" delimited string of the fields, in proper heirachry
 func (t ResourceIdentifier) String() string {
 	fields := []string{}
 	if t.DeploymentID != "" {
@@ -41,14 +41,14 @@ func ParseResourceIdentifier(resourceID string) (*ResourceIdentifier, error) {
 	parts := strings.Split(resourceID, "+")
 
 	if len(parts) < 4 {
-		return &r, fmt.Errorf("Unable to parse input to resource identifier:%v", resourceID)
+		return &r, fmt.Errorf("Unable to parse input to resource identifier:%s", resourceID)
 	}
 	r.ServiceName = parts[0]
 	r.DeploymentID = parts[1]
 	r.ResourceType = parts[2]
 	r.ResourceID = parts[3]
 	if len(parts) < 5 { // so no parent
-		fmt.Printf("ParseResourceIdentifier: r:%+v", r)
+		log.Printf("ParseResourceIdentifier: r:%+v", r)
 		return &r, nil
 	}
 	// handle parent id(s)
@@ -66,14 +66,14 @@ func ParseResourceIdentifier(resourceID string) (*ResourceIdentifier, error) {
 			ResourceID:   parts[5],
 		}
 	}
-	fmt.Printf("ParseResourceIdentifier: r:%+v", r)
+	log.Printf("ParseResourceIdentifier: r:%+v", r)
 	return &r, nil
 }
 
 func NewResourceIdentifier(resourceType string, resourceID string, parent *ResourceIdentifier) *ResourceIdentifier {
 
 	deployID := xid.New()
-	fmt.Printf("NewResourceIdentifier new deployID:%v", deployID.String())
+	log.Printf("NewResourceIdentifier new deployID:%s", deployID.String())
 	r := ResourceIdentifier{
 		DeploymentID: deployID.String(),
 		ResourceType: resourceType,

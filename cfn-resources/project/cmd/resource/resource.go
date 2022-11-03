@@ -3,8 +3,6 @@ package resource
 import (
 	"context"
 	"fmt"
-	"strings"
-
 	"github.com/aws-cloudformation/cloudformation-cli-go-plugin/cfn/handler"
 	"github.com/aws/aws-sdk-go/service/cloudformation"
 	"github.com/mongodb/mongodbatlas-cloudformation-resources/project/cmd/validation"
@@ -14,6 +12,7 @@ import (
 	"github.com/mongodb/mongodbatlas-cloudformation-resources/util/validator"
 	log "github.com/sirupsen/logrus"
 	"go.mongodb.org/atlas/mongodbatlas"
+	"strings"
 )
 
 type UpdateApiKey struct {
@@ -43,8 +42,8 @@ func Create(req handler.Request, prevModel *Model, currentModel *Model) (handler
 
 	client, err := util.CreateMongoDBClient(*currentModel.ApiKeys.PublicKey, *currentModel.ApiKeys.PrivateKey)
 	if err != nil {
-		log.Debugf("CreateMongoDBClient error: %v", err)
-		return progress_events.GetFailedEventByCode(fmt.Sprintf("Failed to Create Client : %v", err.Error()),
+		log.Debugf("CreateMongoDBClient error: %s", err)
+		return progress_events.GetFailedEventByCode(fmt.Sprintf("Failed to Create Client : %s", err.Error()),
 			cloudformation.HandlerErrorCodeInvalidRequest), nil
 	}
 
@@ -58,10 +57,10 @@ func Create(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		WithDefaultAlertsSettings: currentModel.WithDefaultAlertsSettings,
 	}, &mongodbatlas.CreateProjectOptions{ProjectOwnerID: projectOwnerId})
 	if err != nil {
-		//return handler.ProgressEvent{}, fmt.Errorf("error creating project: %v", err)
+		//return handler.ProgressEvent{}, fmt.Errorf("error creating project: %s", err)
 		log.Debugf("Create - error: %+v", err)
 		// TODO- Should detect and return HandlerErrorCodeAlreadyExists
-		return progress_events.GetFailedEventByResponse(fmt.Sprintf("Failed to Create Project : %v", err.Error()),
+		return progress_events.GetFailedEventByResponse(fmt.Sprintf("Failed to Create Project : %s", err.Error()),
 			res.Response), nil
 
 	}
@@ -71,7 +70,7 @@ func Create(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		for _, key := range currentModel.ProjectApiKeys {
 			_, err = client.ProjectAPIKeys.Assign(context.Background(), project.ID, *key.Key, &mongodbatlas.AssignAPIKey{Roles: key.RoleNames})
 			if err != nil {
-				log.Debugf("Assign Key Error: %v", err)
+				log.Debugf("Assign Key Error: %s", err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while Assigning Key to project",
@@ -84,7 +83,7 @@ func Create(req handler.Request, prevModel *Model, currentModel *Model) (handler
 	if len(currentModel.ProjectTeams) > 0 {
 		_, _, err = client.Projects.AddTeamsToProject(context.Background(), project.ID, readTeams(currentModel.ProjectTeams))
 		if err != nil {
-			log.Debugf("AddTeamsToProject Error: %v", err)
+			log.Debugf("AddTeamsToProject Error: %s", err)
 			return handler.ProgressEvent{
 				OperationStatus:  handler.Failed,
 				Message:          "Error while adding teams to project",
@@ -104,8 +103,8 @@ func Create(req handler.Request, prevModel *Model, currentModel *Model) (handler
 
 		_, res, err = client.Projects.UpdateProjectSettings(context.Background(), project.ID, &projectSettings)
 		if err != nil {
-			log.Debugf("UpdateProjectSettings Error: %v", err)
-			return progress_events.GetFailedEventByResponse(fmt.Sprintf("Failed to update Project settings : %v", err.Error()),
+			log.Debugf("UpdateProjectSettings Error: %s", err)
+			return progress_events.GetFailedEventByResponse(fmt.Sprintf("Failed to update Project settings : %s", err.Error()),
 				res.Response), nil
 		}
 	}
@@ -116,7 +115,7 @@ func Create(req handler.Request, prevModel *Model, currentModel *Model) (handler
 
 	event, errr, failed, proj := getProject(*currentModel.Name, client, currentModel, err)
 	if failed {
-		log.Debugf("getProject Error: %v", err)
+		log.Debugf("getProject Error: %s", err)
 		return event, errr
 	}
 
@@ -136,7 +135,7 @@ func Read(req handler.Request, prevModel *Model, currentModel *Model) (handler.P
 	}
 	client, err := util.CreateMongoDBClient(*currentModel.ApiKeys.PublicKey, *currentModel.ApiKeys.PrivateKey)
 	if err != nil {
-		return progress_events.GetFailedEventByCode(fmt.Sprintf("Failed to Create Client : %v", err.Error()),
+		return progress_events.GetFailedEventByCode(fmt.Sprintf("Failed to Create Client : %s", err.Error()),
 			cloudformation.HandlerErrorCodeInvalidRequest), nil
 	}
 	var name string
@@ -179,7 +178,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		//Get teams from project
 		teamsAssigned, _, err := client.Projects.GetProjectTeamsAssigned(context.Background(), projectId)
 		if err != nil {
-			log.Debugf("ProjectId : %v, Error: %v", projectId, err)
+			log.Debugf("ProjectId : %s, Error: %s", projectId, err)
 			return handler.ProgressEvent{
 				OperationStatus:  handler.Failed,
 				Message:          "Error while finding teams in project",
@@ -191,7 +190,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		for _, team := range removeTeams {
 			_, err := client.Teams.RemoveTeamFromProject(context.Background(), projectId, team.TeamID)
 			if err != nil {
-				log.Debugf("Error: %v %v", projectId, err)
+				log.Debug("Error: %s", projectId, err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while deleting team from project",
@@ -202,7 +201,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		if len(newTeams) > 0 {
 			_, _, err = client.Projects.AddTeamsToProject(context.Background(), projectId, newTeams)
 			if err != nil {
-				log.Debugf("Error: %v", err)
+				log.Debugf("Error: %s", err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while adding team to project",
@@ -213,7 +212,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		for _, team := range changedTeams {
 			_, _, err = client.Teams.UpdateTeamRoles(context.Background(), projectId, team.TeamID, &mongodbatlas.TeamUpdateRoles{RoleNames: team.RoleNames})
 			if err != nil {
-				log.Debugf("Error: %v", err)
+				log.Debug("Error: %s", err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while updating team roles in project",
@@ -226,7 +225,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		//Get APIKeys from project
 		projectApiKeys, _, err := client.ProjectAPIKeys.List(context.Background(), projectId, &mongodbatlas.ListOptions{ItemsPerPage: 1000, IncludeCount: true})
 		if err != nil {
-			log.Debugf("Error: %v %v", projectId, err)
+			log.Debug("Error: %s", projectId, err)
 			return handler.ProgressEvent{
 				OperationStatus:  handler.Failed,
 				Message:          "Error while finding api keys in project",
@@ -241,13 +240,13 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		for _, key := range removeKeys {
 			_, err = client.ProjectAPIKeys.Unassign(context.Background(), projectId, key.Key)
 			if err != nil {
-				log.Debugf("Error: %v", err)
+				log.Debug("Error: %s", err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while Un-assigning Key to project",
 					HandlerErrorCode: cloudformation.HandlerErrorCodeInvalidRequest}, nil
 			}
-			//log.Debugf("Removed: %v", key)
+			//log.Debugf("Removed: %s", key)
 
 		}
 
@@ -255,13 +254,13 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		for _, key := range newApiKeys {
 			_, err = client.ProjectAPIKeys.Assign(context.Background(), projectId, key.Key, key.ApiKeys)
 			if err != nil {
-				log.Debugf("Error: %v", err)
+				log.Debugf("Error: %s", err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while Assigning Key to project",
 					HandlerErrorCode: cloudformation.HandlerErrorCodeInvalidRequest}, nil
 			}
-			//log.Debugf("Added: %v", key)
+			//log.Debugf("Added: %s", key)
 
 		}
 
@@ -269,13 +268,13 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 		for _, key := range changedKeys {
 			_, err = client.ProjectAPIKeys.Assign(context.Background(), projectId, key.Key, key.ApiKeys)
 			if err != nil {
-				log.Debugf("Error: %v", err)
+				log.Debugf("Error: %s", err)
 				return handler.ProgressEvent{
 					OperationStatus:  handler.Failed,
 					Message:          "Error while Un-assigning Key to project",
 					HandlerErrorCode: cloudformation.HandlerErrorCodeInvalidRequest}, nil
 			}
-			//log.Debugf("Updated: %v", key)
+			//log.Debugf("Updated: %s", key)
 		}
 	}
 
@@ -337,10 +336,10 @@ func Delete(req handler.Request, prevModel *Model, currentModel *Model) (handler
 			name = *currentModel.Name
 		}
 		if len(name) > 0 {
-			log.Debugf("Project id was nil, try lookup name:%v", name)
+			log.Debugf("Project id was nil, try lookup name:%s", name)
 			project, res, err := client.Projects.GetOneProjectByName(context.Background(), name)
 			if err != nil {
-				return progress_events.GetFailedEventByResponse(fmt.Sprintf("Failed to Create Project : %v", err.Error()),
+				return progress_events.GetFailedEventByResponse(fmt.Sprintf("Failed to Create Project : %s", err.Error()),
 					res.Response), nil
 			}
 			log.Debugf("Looked up project:%+v", project)
@@ -352,13 +351,13 @@ func Delete(req handler.Request, prevModel *Model, currentModel *Model) (handler
 				HandlerErrorCode: cloudformation.HandlerErrorCodeNotFound}, err
 		}
 	}
-	log.Debugf("Deleting project with id(%v)", id)
+	log.Debugf("Deleting project with id(%s)", id)
 
 	res, err := client.Projects.Delete(context.Background(), id)
 	if err != nil {
-		//return handler.ProgressEvent{}, fmt.Errorf("####error deleting project with id(%v): %v", id, err)
-		log.Warnf("####error deleting project with id(%v): %v", id, err)
-		return progress_events.GetFailedEventByResponse(fmt.Sprintf("Failed to Create Project : %v", err.Error()),
+		//return handler.ProgressEvent{}, fmt.Errorf("####error deleting project with id(%s): %s", id, err)
+		log.Warnf("####error deleting project with id(%s): %s", id, err)
+		return progress_events.GetFailedEventByResponse(fmt.Sprintf("Failed to Create Project : %s", err.Error()),
 			res.Response), nil
 	}
 
@@ -391,7 +390,7 @@ func List(req handler.Request, prevModel *Model, currentModel *Model) (handler.P
 	}
 	projects, _, err := client.Projects.GetAllProjects(context.Background(), listOptions)
 	if err != nil {
-		return handler.ProgressEvent{}, fmt.Errorf("error retrieving projects: %v", err)
+		return handler.ProgressEvent{}, fmt.Errorf("error retrieving projects: %s", err)
 	}
 
 	// Initialize like this in case no results will pass empty array
@@ -401,7 +400,7 @@ func List(req handler.Request, prevModel *Model, currentModel *Model) (handler.P
 		m.Name = &project.Name
 		m.Id = &project.ID
 		m.ApiKeys = currentModel.ApiKeys
-		event, err2, model, failed := readProjectSettings(client, project.ID, &m)
+		event, err2, model, failed := readProjectSettings(err, client, project.ID, &m)
 		if failed {
 			return event, err2
 		}
@@ -439,7 +438,7 @@ func getProject(name string, client *mongodbatlas.Client, currentModel *Model, e
 		currentModel.Id = &project.ID
 	} else {
 		id := *currentModel.Id
-		log.Debugf("Looking for project: %v", id)
+		log.Debugf("Looking for project: %s", id)
 		project, _, err := client.Projects.GetOneProject(context.Background(), id)
 		if err != nil {
 			return handler.ProgressEvent{
@@ -454,7 +453,7 @@ func getProject(name string, client *mongodbatlas.Client, currentModel *Model, e
 		currentModel.Id = &project.ID
 	}
 
-	event, err2, model, failed := readProjectSettings(client, id, currentModel)
+	event, err2, model, failed := readProjectSettings(err, client, id, currentModel)
 
 	if failed {
 		return event, err2, true, model
@@ -463,11 +462,11 @@ func getProject(name string, client *mongodbatlas.Client, currentModel *Model, e
 	return handler.ProgressEvent{}, nil, false, model
 }
 
-func readProjectSettings(client *mongodbatlas.Client, id string, currentModel *Model) (handler.ProgressEvent, error, *Model, bool) {
+func readProjectSettings(err error, client *mongodbatlas.Client, id string, currentModel *Model) (handler.ProgressEvent, error, *Model, bool) {
 	//Get teams from project
 	teamsAssigned, res, err := client.Projects.GetProjectTeamsAssigned(context.Background(), id)
 	if err != nil {
-		log.Debugf("ProjectId : %v, Error: %v", id, err)
+		log.Debug("ProjectId : %s, Error: %s", id, err)
 		return progress_events.GetFailedEventByResponse(err.Error(),
 			res.Response), nil, nil, true
 	}
@@ -475,14 +474,14 @@ func readProjectSettings(client *mongodbatlas.Client, id string, currentModel *M
 	//Get APIKeys from project
 	projectApiKeys, res, err := client.ProjectAPIKeys.List(context.Background(), id, &mongodbatlas.ListOptions{ItemsPerPage: 1000, IncludeCount: true})
 	if err != nil {
-		log.Debugf("Error: %v %v", id, err)
+		log.Debug("Error: %s", id, err)
 		return progress_events.GetFailedEventByResponse(err.Error(),
 			res.Response), nil, nil, true
 	}
 
 	projectSettings, _, err := client.Projects.GetProjectSettings(context.Background(), id)
 	if err != nil {
-		log.Debugf("Error: %v %v", id, err)
+		log.Debug("Error: %s", id, err)
 		return progress_events.GetFailedEventByResponse(err.Error(),
 			res.Response), nil, nil, true
 	}

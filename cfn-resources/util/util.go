@@ -1,14 +1,12 @@
 package util
 
 import (
-	"fmt"
-	"os"
-	"strings"
-
 	"github.com/Sectorbob/mlab-ns2/gae/ns/digest"
 	"github.com/aws-cloudformation/cloudformation-cli-go-plugin/cfn/logging"
 	log "github.com/sirupsen/logrus"
 	"go.mongodb.org/atlas/mongodbatlas"
+	"os"
+	"strings"
 )
 
 const (
@@ -19,7 +17,7 @@ const (
 // and returns "US_EAST_1" -- i.e. a valid Atlas region
 func EnsureAtlasRegion(region string) string {
 	r := strings.ToUpper(strings.Replace(string(region), "-", "_", -1))
-	fmt.Printf("EnsureAtlasRegion--- region:%v r:%v", region, r)
+	log.Printf("EnsureAtlasRegion--- region:%s r:%s", region, r)
 	return r
 }
 
@@ -27,13 +25,13 @@ func EnsureAtlasRegion(region string) string {
 // and returns "us-east-1" -- i.e. a valid AWS region
 func EnsureAWSRegion(region string) string {
 	r := strings.ToLower(strings.Replace(string(region), "_", "-", -1))
-	fmt.Printf("EnsureAWSRegion--- region:%v r:%v", region, r)
+	log.Printf("EnsureAWSRegion--- region:%s r:%s", region, r)
 	return r
 }
 
 func CreateMongoDBClient(publicKey, privateKey string) (*mongodbatlas.Client, error) {
 	// setup a transport to handle digest
-	fmt.Printf("CreateMongoDBClient--- publicKey:%v", publicKey)
+	log.Printf("CreateMongoDBClient--- publicKey:%s", publicKey)
 	transport := digest.NewTransport(publicKey, privateKey)
 
 	// initialize the client
@@ -59,17 +57,17 @@ var defaultLogLevel = "info"
 func getLogLevel() log.Level {
 	levelString, exists := os.LookupEnv(EnvLogLevel)
 	if !exists {
-		log.Errorf("getLogLevel() Environment variable '%v' not found. Set it in template.yaml (defaultLogLevel=%v)", EnvLogLevel, defaultLogLevel)
+		log.Errorf("getLogLevel() Environment variable '%s' not found. Set it in template.yaml (defaultLogLevel=%v)", EnvLogLevel, defaultLogLevel)
 		levelString = defaultLogLevel
 	}
 
 	level, err := log.ParseLevel(levelString)
 	if err != nil {
-		log.Errorf("error parsing %v: %v", EnvLogLevel, err)
+		log.Errorf("error parsing %s: %v", EnvLogLevel, err)
 		level, err = log.ParseLevel(defaultLogLevel)
 		return level
 	}
-	fmt.Printf("getLogLevel() levelString=%v level=%v", levelString, level)
+	log.Printf("getLogLevel() levelString=%s level=%v", levelString, level)
 	return level
 }
 
@@ -82,4 +80,5 @@ func SetupLogger(loggerPrefix string) {
 	log.SetFormatter(&log.JSONFormatter{})
 	log.SetLevel(getLogLevel())
 	log.Info("INFO setLogger")
+	log.Debug("DEBUG setLogger")
 }

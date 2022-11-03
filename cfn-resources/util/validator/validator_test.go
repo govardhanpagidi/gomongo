@@ -64,7 +64,7 @@ func TestAllValidateRequiredFieldsEmpty(t *testing.T) {
 	expected := "The next fields are required FirstRequiredField SecondRequiredField ThirdRequiredField FourthRequiredField RequiredStruct.PropertyTest"
 
 	if progressEvent.Message != expected {
-		t.Errorf("Expectd = %v; got = %v", expected, progressEvent.Message)
+		t.Errorf("Expectd = %s; got = %s", expected, progressEvent.Message)
 	}
 }
 
@@ -91,7 +91,7 @@ func TestSomeValidateRequiredFieldsEmpty(t *testing.T) {
 	expected := "The next fields are required FourthRequiredField"
 
 	if progressEvent.Message != expected {
-		t.Errorf("Expectd = %v; got = %v", expected, progressEvent.Message)
+		t.Errorf("Expectd = %s; got = %s", expected, progressEvent.Message)
 	}
 }
 
