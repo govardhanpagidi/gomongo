@@ -25,4 +25,4 @@ jobs:
       - name: Run golangci-lint
         run: |
          cd cfn-resources
-         golangci-lint run ./... --version --verbose --out-format=github-actions --print-issued-lines --print-linter-name --max-issues-per-linter 100 --max-same-issues 100
+         golangci-lint run ./... --version --issues-exit-code=0 --timeout=3m --verbose --out-format=github-actions --print-issued-lines --print-linter-name --max-issues-per-linter 100 --max-same-issues 100
