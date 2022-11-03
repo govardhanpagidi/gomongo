@@ -1,4 +1,4 @@
-name: golangci-lint-415
+name: golangci-lint
 on:
   push:
     branches: [ "master" , "INT**"]
