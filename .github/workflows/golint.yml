@@ -17,6 +17,4 @@ jobs:
         uses: golangci/golangci-lint-action@v3.3.0
         with:
           version: v1.48.0
-      - name: Run golangci-lint
-        run: |
-         golangci-lint run cfn-resources/...
+          working-directory: cfn-resources
