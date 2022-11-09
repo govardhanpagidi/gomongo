@@ -16,6 +16,16 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN pip3 install cloudformation-cli cloudformation-cli-java-plugin cloudformation-cli-go-plugin cloudformation-cli-python-plugin
 COPY requirements.txt /
 RUN pip3 install -r /requirements.txt
+RUN apt install -y jq
+
+# Install mongocli
+RUN MCLI_TAG=$(curl -sL --header "Accept: application/json" https://github.com/mongodb/mongocli/releases/latest | jq -r '.["tag_name"]') && \
+    MCLI_VERSION=$(echo $MCLI_TAG | cut -dv -f2) && \
+    MCLI_DEB="mongocli_${MCLI_VERSION}_linux_x86_64.deb" && \
+    curl -OL https://github.com/mongodb/mongocli/releases/download/${MCLI_TAG}/${MCLI_DEB} && \
+    echo "About to install mongocli from: ${MCLI_DEB}" && \
+    dpkg -i ${MCLI_DEB} \
+
 
 #WORKDIR /atlas-cfn
 #COPY atlas-cfn-deploy.py atlas-cfn-deploy.py  
