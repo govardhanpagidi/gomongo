@@ -25,6 +25,7 @@ output = json " > ~/.aws/config
 
 echo "setting up mongocli"
 
+touch "$HOME"/.config/mongocli/config.toml
 echo "[default]
 org_id = '$INPUT_ATLAS_ORG_ID_CFN'
 public_api_key = '$INPUT_ATLAS_PUBLIC_KEY_CFN'
