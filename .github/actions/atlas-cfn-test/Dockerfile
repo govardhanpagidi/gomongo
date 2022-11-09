@@ -16,7 +16,7 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN pip3 install cloudformation-cli cloudformation-cli-java-plugin cloudformation-cli-go-plugin cloudformation-cli-python-plugin
 COPY requirements.txt /
 RUN pip3 install -r /requirements.txt
-RUN apt-get install -y jq
+RUN apt-get install jq
 
 # Install mongocli
 RUN MCLI_TAG=$(curl -sL --header "Accept: application/json" https://github.com/mongodb/mongocli/releases/latest | jq -r '.["tag_name"]') && \
