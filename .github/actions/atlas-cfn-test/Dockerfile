@@ -24,7 +24,8 @@ RUN MCLI_TAG=$(curl -sL --header "Accept: application/json" https://github.com/m
     curl -OL https://github.com/mongodb/mongocli/releases/download/${MCLI_TAG}/${MCLI_DEB} && \
     echo "About to install mongocli from: ${MCLI_DEB}" && \
     dpkg -i ${MCLI_DEB}
-RUN mongocli --help
+
+RUN mongocli --version
 #WORKDIR /atlas-cfn
 #COPY atlas-cfn-deploy.py atlas-cfn-deploy.py  
 #COPY atlas-cfn-stack-cleaner.sh atlas-cfn-stack-cleaner.sh
