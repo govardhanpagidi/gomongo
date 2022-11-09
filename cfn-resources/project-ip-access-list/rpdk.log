@@ -1,0 +1,175 @@
+[2022-10-25T16:49:35Z] DEBUG    - Logging set up successfully
+[2022-10-25T16:49:35Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x1211009d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T16:49:35Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list
+[2022-10-25T16:49:35Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/.rpdk-config'
+[2022-10-25T16:49:35Z] INFO     - Validating your resource specification...
+[2022-10-25T16:49:35Z] WARNING  - Explicitly specify value for insertionOrder for array: AccessList
+[2022-10-25T16:49:35Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T16:49:35Z] DEBUG    - Resolved '#/definitions/accessListDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/accessListDefinition'
+[2022-10-25T16:49:35Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/accessListDefinition' to '(<BASE>, 'definitions', 'accessListDefinition')'
+[2022-10-25T16:49:35Z] DEBUG    - Edge from '(<BASE>, 'properties', 'AccessList', 'items')' to '(<BASE>, 'definitions', 'accessListDefinition')'
+[2022-10-25T16:49:35Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/apiKeyDefinition'
+[2022-10-25T16:49:35Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:49:35Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:49:35Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json)
+[2022-10-25T16:49:35Z] DEBUG    -   '#/definitions/accessListDefinition' -> '#/definitions/accessListDefinition'
+[2022-10-25T16:49:35Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T16:49:35Z] WARNING  - Resource schema is valid.
+[2022-10-25T16:49:35Z] INFO     - Validating your resource schema...
+[2022-10-25T16:49:35Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/resource-role.yaml
+[2022-10-25T16:49:35Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/resource-role.yaml'
+[2022-10-25T16:49:35Z] DEBUG    - Generate started
+[2022-10-25T16:49:35Z] DEBUG    - Writing Types
+[2022-10-25T16:49:35Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/resource/model.go'
+[2022-10-25T16:49:35Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/main.go
+[2022-10-25T16:49:35Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/main.go'
+[2022-10-25T16:49:35Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/makebuild
+[2022-10-25T16:49:35Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/makebuild'
+[2022-10-25T16:49:36Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs
+[2022-10-25T16:49:36Z] DEBUG    - Writing generated docs
+[2022-10-25T16:49:36Z] DEBUG    - Writing docs accesslistdefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/accesslistdefinition.md
+[2022-10-25T16:49:36Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/apikeydefinition.md
+[2022-10-25T16:49:36Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T16:49:36Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/README.md
+[2022-10-25T16:49:36Z] WARNING  - Generated files for MongoDB::Atlas::ProjectIpAccessList
+[2022-10-25T16:49:36Z] DEBUG    - Finished generate
+[2022-10-25T16:50:50Z] DEBUG    - Logging set up successfully
+[2022-10-25T16:50:50Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x11bfb49d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T16:50:50Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list
+[2022-10-25T16:50:50Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/.rpdk-config'
+[2022-10-25T16:50:50Z] INFO     - Validating your resource specification...
+[2022-10-25T16:50:50Z] WARNING  - Explicitly specify value for insertionOrder for array: AccessList
+[2022-10-25T16:50:50Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T16:50:50Z] DEBUG    - Resolved '#/definitions/accessListDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/accessListDefinition'
+[2022-10-25T16:50:50Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/accessListDefinition' to '(<BASE>, 'definitions', 'accessListDefinition')'
+[2022-10-25T16:50:50Z] DEBUG    - Edge from '(<BASE>, 'properties', 'AccessList', 'items')' to '(<BASE>, 'definitions', 'accessListDefinition')'
+[2022-10-25T16:50:50Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/apiKeyDefinition'
+[2022-10-25T16:50:50Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:50:50Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:50:50Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json)
+[2022-10-25T16:50:50Z] DEBUG    -   '#/definitions/accessListDefinition' -> '#/definitions/accessListDefinition'
+[2022-10-25T16:50:50Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T16:50:50Z] WARNING  - Resource schema is valid.
+[2022-10-25T16:50:50Z] INFO     - Validating your resource schema...
+[2022-10-25T16:50:50Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/resource-role.yaml
+[2022-10-25T16:50:50Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/resource-role.yaml'
+[2022-10-25T16:50:50Z] DEBUG    - Generate started
+[2022-10-25T16:50:50Z] DEBUG    - Writing Types
+[2022-10-25T16:50:50Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/resource/model.go'
+[2022-10-25T16:50:50Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/main.go
+[2022-10-25T16:50:50Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/main.go'
+[2022-10-25T16:50:50Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/makebuild
+[2022-10-25T16:50:50Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/makebuild'
+[2022-10-25T16:50:50Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs
+[2022-10-25T16:50:50Z] DEBUG    - Writing generated docs
+[2022-10-25T16:50:50Z] DEBUG    - Writing docs accesslistdefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/accesslistdefinition.md
+[2022-10-25T16:50:50Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/apikeydefinition.md
+[2022-10-25T16:50:50Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T16:50:50Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/README.md
+[2022-10-25T16:50:50Z] WARNING  - Generated files for MongoDB::Atlas::ProjectIpAccessList
+[2022-10-25T16:50:50Z] DEBUG    - Finished generate
+[2022-10-25T16:52:45Z] DEBUG    - Logging set up successfully
+[2022-10-25T16:52:45Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x11be789d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T16:52:45Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list
+[2022-10-25T16:52:45Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/.rpdk-config'
+[2022-10-25T16:52:45Z] INFO     - Validating your resource specification...
+[2022-10-25T16:52:45Z] WARNING  - Explicitly specify value for insertionOrder for array: AccessList
+[2022-10-25T16:52:45Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T16:52:45Z] DEBUG    - Resolved '#/definitions/accessListDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/accessListDefinition'
+[2022-10-25T16:52:45Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/accessListDefinition' to '(<BASE>, 'definitions', 'accessListDefinition')'
+[2022-10-25T16:52:45Z] DEBUG    - Edge from '(<BASE>, 'properties', 'AccessList', 'items')' to '(<BASE>, 'definitions', 'accessListDefinition')'
+[2022-10-25T16:52:45Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/apiKeyDefinition'
+[2022-10-25T16:52:45Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:52:45Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:52:45Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json)
+[2022-10-25T16:52:45Z] DEBUG    -   '#/definitions/accessListDefinition' -> '#/definitions/accessListDefinition'
+[2022-10-25T16:52:45Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T16:52:45Z] WARNING  - Resource schema is valid.
+[2022-10-25T16:52:45Z] INFO     - Validating your resource schema...
+[2022-10-25T16:52:45Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/resource-role.yaml
+[2022-10-25T16:52:45Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/resource-role.yaml'
+[2022-10-25T16:52:45Z] DEBUG    - Generate started
+[2022-10-25T16:52:45Z] DEBUG    - Writing Types
+[2022-10-25T16:52:45Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/resource/model.go'
+[2022-10-25T16:52:45Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/main.go
+[2022-10-25T16:52:45Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/main.go'
+[2022-10-25T16:52:45Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/makebuild
+[2022-10-25T16:52:45Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/makebuild'
+[2022-10-25T16:52:45Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs
+[2022-10-25T16:52:45Z] DEBUG    - Writing generated docs
+[2022-10-25T16:52:45Z] DEBUG    - Writing docs accesslistdefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/accesslistdefinition.md
+[2022-10-25T16:52:45Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/apikeydefinition.md
+[2022-10-25T16:52:45Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T16:52:45Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/README.md
+[2022-10-25T16:52:45Z] WARNING  - Generated files for MongoDB::Atlas::ProjectIpAccessList
+[2022-10-25T16:52:45Z] DEBUG    - Finished generate
+[2022-10-25T17:00:31Z] DEBUG    - Logging set up successfully
+[2022-10-25T17:00:31Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x120b949d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T17:00:31Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list
+[2022-10-25T17:00:31Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/.rpdk-config'
+[2022-10-25T17:00:31Z] INFO     - Validating your resource specification...
+[2022-10-25T17:00:31Z] WARNING  - Explicitly specify value for insertionOrder for array: AccessList
+[2022-10-25T17:00:31Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T17:00:31Z] DEBUG    - Resolved '#/definitions/accessListDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/accessListDefinition'
+[2022-10-25T17:00:31Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/accessListDefinition' to '(<BASE>, 'definitions', 'accessListDefinition')'
+[2022-10-25T17:00:31Z] DEBUG    - Edge from '(<BASE>, 'properties', 'AccessList', 'items')' to '(<BASE>, 'definitions', 'accessListDefinition')'
+[2022-10-25T17:00:31Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/apiKeyDefinition'
+[2022-10-25T17:00:31Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T17:00:31Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T17:00:31Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json)
+[2022-10-25T17:00:31Z] DEBUG    -   '#/definitions/accessListDefinition' -> '#/definitions/accessListDefinition'
+[2022-10-25T17:00:31Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T17:00:31Z] WARNING  - Resource schema is valid.
+[2022-10-25T17:00:31Z] INFO     - Validating your resource schema...
+[2022-10-25T17:00:31Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/resource-role.yaml
+[2022-10-25T17:00:31Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/resource-role.yaml'
+[2022-10-25T17:00:31Z] DEBUG    - Generate started
+[2022-10-25T17:00:31Z] DEBUG    - Writing Types
+[2022-10-25T17:00:31Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/resource/model.go'
+[2022-10-25T17:00:31Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/main.go
+[2022-10-25T17:00:31Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/main.go'
+[2022-10-25T17:00:31Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/makebuild
+[2022-10-25T17:00:31Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/makebuild'
+[2022-10-25T17:00:31Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs
+[2022-10-25T17:00:31Z] DEBUG    - Writing generated docs
+[2022-10-25T17:00:31Z] DEBUG    - Writing docs accesslistdefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/accesslistdefinition.md
+[2022-10-25T17:00:31Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/apikeydefinition.md
+[2022-10-25T17:00:31Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T17:00:31Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/README.md
+[2022-10-25T17:00:31Z] WARNING  - Generated files for MongoDB::Atlas::ProjectIpAccessList
+[2022-10-25T17:00:31Z] DEBUG    - Finished generate
+[2022-11-08T21:01:52Z] DEBUG    - Logging set up successfully
+[2022-11-08T21:01:52Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x1254a09d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-11-08T21:01:52Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list
+[2022-11-08T21:01:52Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/.rpdk-config'
+[2022-11-08T21:01:52Z] INFO     - Validating your resource specification...
+[2022-11-08T21:01:52Z] WARNING  - Explicitly specify value for insertionOrder for array: AccessList
+[2022-11-08T21:01:52Z] WARNING  - Explicitly specify value for tagging
+[2022-11-08T21:01:52Z] DEBUG    - Resolved '#/definitions/accessListDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/accessListDefinition'
+[2022-11-08T21:01:52Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/accessListDefinition' to '(<BASE>, 'definitions', 'accessListDefinition')'
+[2022-11-08T21:01:52Z] DEBUG    - Edge from '(<BASE>, 'properties', 'AccessList', 'items')' to '(<BASE>, 'definitions', 'accessListDefinition')'
+[2022-11-08T21:01:52Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/apiKeyDefinition'
+[2022-11-08T21:01:52Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-08T21:01:52Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-08T21:01:52Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/mongodb-atlas-projectipaccesslist.json)
+[2022-11-08T21:01:52Z] DEBUG    -   '#/definitions/accessListDefinition' -> '#/definitions/accessListDefinition'
+[2022-11-08T21:01:52Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-11-08T21:01:52Z] WARNING  - Resource schema is valid.
+[2022-11-08T21:01:52Z] INFO     - Validating your resource schema...
+[2022-11-08T21:01:52Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/resource-role.yaml
+[2022-11-08T21:01:52Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/resource-role.yaml'
+[2022-11-08T21:01:52Z] DEBUG    - Generate started
+[2022-11-08T21:01:52Z] DEBUG    - Writing Types
+[2022-11-08T21:01:52Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/resource/model.go'
+[2022-11-08T21:01:52Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/main.go
+[2022-11-08T21:01:52Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/cmd/main.go'
+[2022-11-08T21:01:52Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/makebuild
+[2022-11-08T21:01:52Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/makebuild'
+[2022-11-08T21:01:52Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs
+[2022-11-08T21:01:52Z] DEBUG    - Writing generated docs
+[2022-11-08T21:01:52Z] DEBUG    - Writing docs accesslistdefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/accesslistdefinition.md
+[2022-11-08T21:01:52Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/apikeydefinition.md
+[2022-11-08T21:01:52Z] DEBUG    - Finished documenting nested properties
+[2022-11-08T21:01:52Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project-ip-access-list/docs/README.md
+[2022-11-08T21:01:52Z] WARNING  - Generated files for MongoDB::Atlas::ProjectIpAccessList
+[2022-11-08T21:01:52Z] DEBUG    - Finished generate

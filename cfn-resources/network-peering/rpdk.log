@@ -1,0 +1,145 @@
+[2022-10-25T16:49:39Z] DEBUG    - Logging set up successfully
+[2022-10-25T16:49:39Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x11a5f49d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T16:49:39Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering
+[2022-10-25T16:49:39Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/.rpdk-config'
+[2022-10-25T16:49:39Z] INFO     - Validating your resource specification...
+[2022-10-25T16:49:39Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T16:49:39Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json#/definitions/apiKeyDefinition'
+[2022-10-25T16:49:39Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:49:39Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:49:39Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json)
+[2022-10-25T16:49:39Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T16:49:39Z] WARNING  - Resource schema is valid.
+[2022-10-25T16:49:39Z] INFO     - Validating your resource schema...
+[2022-10-25T16:49:39Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/resource-role.yaml
+[2022-10-25T16:49:39Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/resource-role.yaml'
+[2022-10-25T16:49:39Z] DEBUG    - Generate started
+[2022-10-25T16:49:39Z] DEBUG    - Writing Types
+[2022-10-25T16:49:39Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/resource/model.go'
+[2022-10-25T16:49:39Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/main.go
+[2022-10-25T16:49:39Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/main.go'
+[2022-10-25T16:49:39Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/makebuild
+[2022-10-25T16:49:39Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/makebuild'
+[2022-10-25T16:49:39Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs
+[2022-10-25T16:49:39Z] DEBUG    - Writing generated docs
+[2022-10-25T16:49:39Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs/apikeydefinition.md
+[2022-10-25T16:49:39Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T16:49:39Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs/README.md
+[2022-10-25T16:49:39Z] WARNING  - Generated files for MongoDB::Atlas::NetworkPeering
+[2022-10-25T16:49:39Z] DEBUG    - Finished generate
+[2022-10-25T16:50:53Z] DEBUG    - Logging set up successfully
+[2022-10-25T16:50:53Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x120dac9d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T16:50:53Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering
+[2022-10-25T16:50:53Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/.rpdk-config'
+[2022-10-25T16:50:53Z] INFO     - Validating your resource specification...
+[2022-10-25T16:50:53Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T16:50:53Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json#/definitions/apiKeyDefinition'
+[2022-10-25T16:50:53Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:50:53Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:50:53Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json)
+[2022-10-25T16:50:53Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T16:50:53Z] WARNING  - Resource schema is valid.
+[2022-10-25T16:50:53Z] INFO     - Validating your resource schema...
+[2022-10-25T16:50:53Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/resource-role.yaml
+[2022-10-25T16:50:53Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/resource-role.yaml'
+[2022-10-25T16:50:53Z] DEBUG    - Generate started
+[2022-10-25T16:50:53Z] DEBUG    - Writing Types
+[2022-10-25T16:50:53Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/resource/model.go'
+[2022-10-25T16:50:53Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/main.go
+[2022-10-25T16:50:53Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/main.go'
+[2022-10-25T16:50:53Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/makebuild
+[2022-10-25T16:50:53Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/makebuild'
+[2022-10-25T16:50:53Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs
+[2022-10-25T16:50:53Z] DEBUG    - Writing generated docs
+[2022-10-25T16:50:53Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs/apikeydefinition.md
+[2022-10-25T16:50:53Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T16:50:53Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs/README.md
+[2022-10-25T16:50:53Z] WARNING  - Generated files for MongoDB::Atlas::NetworkPeering
+[2022-10-25T16:50:53Z] DEBUG    - Finished generate
+[2022-10-25T16:52:48Z] DEBUG    - Logging set up successfully
+[2022-10-25T16:52:48Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x119f2c9d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T16:52:48Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering
+[2022-10-25T16:52:48Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/.rpdk-config'
+[2022-10-25T16:52:48Z] INFO     - Validating your resource specification...
+[2022-10-25T16:52:48Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T16:52:48Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json#/definitions/apiKeyDefinition'
+[2022-10-25T16:52:48Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:52:48Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:52:48Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json)
+[2022-10-25T16:52:48Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T16:52:48Z] WARNING  - Resource schema is valid.
+[2022-10-25T16:52:48Z] INFO     - Validating your resource schema...
+[2022-10-25T16:52:48Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/resource-role.yaml
+[2022-10-25T16:52:48Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/resource-role.yaml'
+[2022-10-25T16:52:48Z] DEBUG    - Generate started
+[2022-10-25T16:52:48Z] DEBUG    - Writing Types
+[2022-10-25T16:52:48Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/resource/model.go'
+[2022-10-25T16:52:48Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/main.go
+[2022-10-25T16:52:48Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/main.go'
+[2022-10-25T16:52:48Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/makebuild
+[2022-10-25T16:52:48Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/makebuild'
+[2022-10-25T16:52:48Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs
+[2022-10-25T16:52:48Z] DEBUG    - Writing generated docs
+[2022-10-25T16:52:48Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs/apikeydefinition.md
+[2022-10-25T16:52:48Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T16:52:48Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs/README.md
+[2022-10-25T16:52:48Z] WARNING  - Generated files for MongoDB::Atlas::NetworkPeering
+[2022-10-25T16:52:48Z] DEBUG    - Finished generate
+[2022-10-25T17:00:33Z] DEBUG    - Logging set up successfully
+[2022-10-25T17:00:33Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x119b3c9d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T17:00:33Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering
+[2022-10-25T17:00:33Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/.rpdk-config'
+[2022-10-25T17:00:34Z] INFO     - Validating your resource specification...
+[2022-10-25T17:00:34Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T17:00:34Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json#/definitions/apiKeyDefinition'
+[2022-10-25T17:00:34Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T17:00:34Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T17:00:34Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json)
+[2022-10-25T17:00:34Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T17:00:34Z] WARNING  - Resource schema is valid.
+[2022-10-25T17:00:34Z] INFO     - Validating your resource schema...
+[2022-10-25T17:00:34Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/resource-role.yaml
+[2022-10-25T17:00:34Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/resource-role.yaml'
+[2022-10-25T17:00:34Z] DEBUG    - Generate started
+[2022-10-25T17:00:34Z] DEBUG    - Writing Types
+[2022-10-25T17:00:34Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/resource/model.go'
+[2022-10-25T17:00:34Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/main.go
+[2022-10-25T17:00:34Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/main.go'
+[2022-10-25T17:00:34Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/makebuild
+[2022-10-25T17:00:34Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/makebuild'
+[2022-10-25T17:00:34Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs
+[2022-10-25T17:00:34Z] DEBUG    - Writing generated docs
+[2022-10-25T17:00:34Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs/apikeydefinition.md
+[2022-10-25T17:00:34Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T17:00:34Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs/README.md
+[2022-10-25T17:00:34Z] WARNING  - Generated files for MongoDB::Atlas::NetworkPeering
+[2022-10-25T17:00:34Z] DEBUG    - Finished generate
+[2022-11-08T21:01:55Z] DEBUG    - Logging set up successfully
+[2022-11-08T21:01:55Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x1199249d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-11-08T21:01:55Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering
+[2022-11-08T21:01:55Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/.rpdk-config'
+[2022-11-08T21:01:55Z] INFO     - Validating your resource specification...
+[2022-11-08T21:01:55Z] WARNING  - Explicitly specify value for tagging
+[2022-11-08T21:01:55Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json#/definitions/apiKeyDefinition'
+[2022-11-08T21:01:55Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-08T21:01:55Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-08T21:01:55Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/mongodb-atlas-networkpeering.json)
+[2022-11-08T21:01:55Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-11-08T21:01:55Z] WARNING  - Resource schema is valid.
+[2022-11-08T21:01:55Z] INFO     - Validating your resource schema...
+[2022-11-08T21:01:55Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/resource-role.yaml
+[2022-11-08T21:01:55Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/resource-role.yaml'
+[2022-11-08T21:01:55Z] DEBUG    - Generate started
+[2022-11-08T21:01:55Z] DEBUG    - Writing Types
+[2022-11-08T21:01:55Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/resource/model.go'
+[2022-11-08T21:01:55Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/main.go
+[2022-11-08T21:01:55Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/cmd/main.go'
+[2022-11-08T21:01:55Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/makebuild
+[2022-11-08T21:01:55Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/makebuild'
+[2022-11-08T21:01:55Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs
+[2022-11-08T21:01:55Z] DEBUG    - Writing generated docs
+[2022-11-08T21:01:55Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs/apikeydefinition.md
+[2022-11-08T21:01:55Z] DEBUG    - Finished documenting nested properties
+[2022-11-08T21:01:55Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/network-peering/docs/README.md
+[2022-11-08T21:01:55Z] WARNING  - Generated files for MongoDB::Atlas::NetworkPeering
+[2022-11-08T21:01:55Z] DEBUG    - Finished generate

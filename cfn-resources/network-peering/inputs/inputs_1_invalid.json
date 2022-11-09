@@ -1,0 +1,11 @@
+{
+  "ProjectId": "635816406d64eb1edb5693bd",
+  "ApiKeys": {
+    "PublicKey": "xfqavjxw",
+    "PrivateKey": "7568e028-2e8b-424d-824b-17f3ad73d746"
+  },
+  "AccepterRegionName": "us-east-1",
+  "AwsAccountId": "466197078724",
+  "RouteTableCIDRBlock": "172.31.BAD.CIDR/24",
+  "VpcId": "vpc-8ec753e5"
+}

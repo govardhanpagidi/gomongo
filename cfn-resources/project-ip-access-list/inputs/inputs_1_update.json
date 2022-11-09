@@ -1,0 +1,13 @@
+{
+  "ProjectId": "63581639ae9b0f7fd4863138",
+  "ApiKeys": {
+    "PublicKey": "xfqavjxw",
+    "PrivateKey": "7568e028-2e8b-424d-824b-17f3ad73d746"
+  },
+  "AccessList": [
+    {
+      "CIDRBlock": "203.0.113.0/24",
+      "Comment": "CIDR block for Application Server B - D"
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+[2022-11-09T16:55:37Z] DEBUG    - Logging set up successfully
+[2022-11-09T16:55:37Z] DEBUG    - Running test: Namespace(version=False, subparser_name='test', command=<function test at 0x11f56beb0>, verbose=0, endpoint='http://127.0.0.1:3001', function_name='TypeFunction', region='us-east-1', role_arn=None, cloudformation_endpoint_url=None, enforce_timeout='30', log_group_name=None, log_role_arn=None, passed_to_pytest=[], docker_image=None)
+[2022-11-09T16:55:37Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project
+[2022-11-09T16:55:37Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/.rpdk-config'
+[2022-11-09T16:55:37Z] INFO     - Validating your resource specification...
+[2022-11-09T16:55:37Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectTeams
+[2022-11-09T16:55:37Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectApiKeys
+[2022-11-09T16:55:37Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T16:55:37Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T16:55:37Z] WARNING  - Explicitly specify value for tagging
+[2022-11-09T16:55:37Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T16:55:37Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:55:37Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:55:37Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T16:55:37Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:55:37Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:55:37Z] DEBUG    - Resolved '#/definitions/projectSettings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings'
+[2022-11-09T16:55:37Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T16:55:37Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectSettings')' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T16:55:37Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition'
+[2022-11-09T16:55:37Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T16:55:37Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T16:55:37Z] DEBUG    - Resolved '#/definitions/projectTeam' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam'
+[2022-11-09T16:55:37Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T16:55:37Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectTeams', 'items')' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T16:55:37Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T16:55:37Z] DEBUG    - Resolved '#/definitions/projectApiKey' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey'
+[2022-11-09T16:55:37Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T16:55:37Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectApiKeys', 'items')' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T16:55:37Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T16:55:37Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json)
+[2022-11-09T16:55:37Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T16:55:37Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T16:55:37Z] DEBUG    -   '#/definitions/projectSettings' -> '#/definitions/projectSettings'
+[2022-11-09T16:55:37Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-11-09T16:55:37Z] DEBUG    -   '#/definitions/projectTeam' -> '#/definitions/projectTeam'
+[2022-11-09T16:55:37Z] DEBUG    -   '#/definitions/projectApiKey' -> '#/definitions/projectApiKey'
+[2022-11-09T16:55:37Z] WARNING  - Resource schema is valid.
+[2022-11-09T16:55:37Z] INFO     - Validating your resource schema...
+[2022-11-09T16:55:37Z] DEBUG    - Override file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/overrides.json' not found. No overrides will be applied
+[2022-11-09T16:55:38Z] DEBUG    - Unhandled exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/cli.py", line 100, in main
+    args.command(args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/test.py", line 384, in test
+    invoke_test(args, project, overrides, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/test.py", line 388, in invoke_test
+    plugin_clients = get_contract_plugin_client(args, project, overrides, inputs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/test.py", line 332, in get_contract_plugin_client
+    plugin_clients["resource_client"] = ResourceClient(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 206, in __init__
+    self._update_schema(schema)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 225, in _update_schema
+    self.write_only_paths = self._properties_to_paths("writeOnlyProperties")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 214, in _properties_to_paths
+    return {fragment_decode(prop, prefix="") for prop in self._schema.get(key, [])}
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 214, in <setcomp>
+    return {fragment_decode(prop, prefix="") for prop in self._schema.get(key, [])}
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/jsonutils/pointer.py", line 96, in fragment_decode
+    raise ValueError("Expected prefix '{}', but was '{}'".format(prefix, actual))
+ValueError: Expected prefix '', but was 'properties'
+[2022-11-09T16:57:22Z] DEBUG    - Logging set up successfully
+[2022-11-09T16:57:22Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x11b3109d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-11-09T16:57:22Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project
+[2022-11-09T16:57:22Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/.rpdk-config'
+[2022-11-09T16:57:22Z] INFO     - Validating your resource specification...
+[2022-11-09T16:57:22Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectTeams
+[2022-11-09T16:57:22Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectApiKeys
+[2022-11-09T16:57:22Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T16:57:22Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T16:57:22Z] WARNING  - Explicitly specify value for tagging
+[2022-11-09T16:57:22Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T16:57:22Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:57:22Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:57:22Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T16:57:22Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:57:22Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:57:22Z] DEBUG    - Resolved '#/definitions/projectSettings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings'
+[2022-11-09T16:57:22Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T16:57:22Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectSettings')' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T16:57:22Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition'
+[2022-11-09T16:57:22Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T16:57:22Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T16:57:22Z] DEBUG    - Resolved '#/definitions/projectTeam' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam'
+[2022-11-09T16:57:22Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T16:57:22Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectTeams', 'items')' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T16:57:22Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T16:57:22Z] DEBUG    - Resolved '#/definitions/projectApiKey' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey'
+[2022-11-09T16:57:22Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T16:57:22Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectApiKeys', 'items')' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T16:57:22Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T16:57:22Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json)
+[2022-11-09T16:57:22Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T16:57:22Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T16:57:22Z] DEBUG    -   '#/definitions/projectSettings' -> '#/definitions/projectSettings'
+[2022-11-09T16:57:22Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-11-09T16:57:22Z] DEBUG    -   '#/definitions/projectTeam' -> '#/definitions/projectTeam'
+[2022-11-09T16:57:22Z] DEBUG    -   '#/definitions/projectApiKey' -> '#/definitions/projectApiKey'
+[2022-11-09T16:57:22Z] WARNING  - Resource schema is valid.
+[2022-11-09T16:57:22Z] INFO     - Validating your resource schema...
+[2022-11-09T16:57:22Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/resource-role.yaml
+[2022-11-09T16:57:22Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/resource-role.yaml'
+[2022-11-09T16:57:22Z] DEBUG    - Generate started
+[2022-11-09T16:57:22Z] DEBUG    - Writing Types
+[2022-11-09T16:57:22Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/cmd/resource/model.go'
+[2022-11-09T16:57:22Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/cmd/main.go
+[2022-11-09T16:57:22Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/cmd/main.go'
+[2022-11-09T16:57:22Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/makebuild
+[2022-11-09T16:57:22Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/makebuild'
+[2022-11-09T16:57:22Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs
+[2022-11-09T16:57:22Z] DEBUG    - Writing generated docs
+[2022-11-09T16:57:22Z] DEBUG    - Writing docs projectsettings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/projectsettings.md
+[2022-11-09T16:57:22Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/apikeydefinition.md
+[2022-11-09T16:57:22Z] DEBUG    - Writing docs projectteam.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/projectteam.md
+[2022-11-09T16:57:22Z] DEBUG    - Writing docs projectapikey.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/projectapikey.md
+[2022-11-09T16:57:22Z] DEBUG    - Finished documenting nested properties
+[2022-11-09T16:57:22Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/README.md
+[2022-11-09T16:57:22Z] WARNING  - Generated files for MongoDB::Atlas::Project
+[2022-11-09T16:57:22Z] DEBUG    - Finished generate
+[2022-11-09T16:57:36Z] DEBUG    - Logging set up successfully
+[2022-11-09T16:57:36Z] DEBUG    - Running test: Namespace(version=False, subparser_name='test', command=<function test at 0x122d43eb0>, verbose=0, endpoint='http://127.0.0.1:3001', function_name='TypeFunction', region='us-east-1', role_arn=None, cloudformation_endpoint_url=None, enforce_timeout='30', log_group_name=None, log_role_arn=None, passed_to_pytest=[], docker_image=None)
+[2022-11-09T16:57:36Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project
+[2022-11-09T16:57:36Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/.rpdk-config'
+[2022-11-09T16:57:36Z] INFO     - Validating your resource specification...
+[2022-11-09T16:57:36Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectTeams
+[2022-11-09T16:57:36Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectApiKeys
+[2022-11-09T16:57:36Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T16:57:36Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T16:57:36Z] WARNING  - Explicitly specify value for tagging
+[2022-11-09T16:57:36Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T16:57:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:57:36Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:57:36Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T16:57:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:57:36Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:57:36Z] DEBUG    - Resolved '#/definitions/projectSettings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings'
+[2022-11-09T16:57:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T16:57:36Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectSettings')' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T16:57:36Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition'
+[2022-11-09T16:57:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T16:57:36Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T16:57:36Z] DEBUG    - Resolved '#/definitions/projectTeam' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam'
+[2022-11-09T16:57:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T16:57:36Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectTeams', 'items')' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T16:57:36Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T16:57:36Z] DEBUG    - Resolved '#/definitions/projectApiKey' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey'
+[2022-11-09T16:57:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T16:57:36Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectApiKeys', 'items')' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T16:57:36Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T16:57:36Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json)
+[2022-11-09T16:57:36Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T16:57:36Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T16:57:36Z] DEBUG    -   '#/definitions/projectSettings' -> '#/definitions/projectSettings'
+[2022-11-09T16:57:36Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-11-09T16:57:36Z] DEBUG    -   '#/definitions/projectTeam' -> '#/definitions/projectTeam'
+[2022-11-09T16:57:36Z] DEBUG    -   '#/definitions/projectApiKey' -> '#/definitions/projectApiKey'
+[2022-11-09T16:57:36Z] WARNING  - Resource schema is valid.
+[2022-11-09T16:57:36Z] INFO     - Validating your resource schema...
+[2022-11-09T16:57:36Z] DEBUG    - Override file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/overrides.json' not found. No overrides will be applied
+[2022-11-09T16:57:37Z] DEBUG    - Unhandled exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/cli.py", line 100, in main
+    args.command(args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/test.py", line 384, in test
+    invoke_test(args, project, overrides, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/test.py", line 388, in invoke_test
+    plugin_clients = get_contract_plugin_client(args, project, overrides, inputs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/test.py", line 332, in get_contract_plugin_client
+    plugin_clients["resource_client"] = ResourceClient(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 206, in __init__
+    self._update_schema(schema)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 225, in _update_schema
+    self.write_only_paths = self._properties_to_paths("writeOnlyProperties")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 214, in _properties_to_paths
+    return {fragment_decode(prop, prefix="") for prop in self._schema.get(key, [])}
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 214, in <setcomp>
+    return {fragment_decode(prop, prefix="") for prop in self._schema.get(key, [])}
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/jsonutils/pointer.py", line 96, in fragment_decode
+    raise ValueError("Expected prefix '{}', but was '{}'".format(prefix, actual))
+ValueError: Expected prefix '', but was 'properties'
+[2022-11-09T16:58:06Z] DEBUG    - Logging set up successfully
+[2022-11-09T16:58:06Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x11d1f09d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-11-09T16:58:06Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project
+[2022-11-09T16:58:06Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/.rpdk-config'
+[2022-11-09T16:58:06Z] INFO     - Validating your resource specification...
+[2022-11-09T16:58:06Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectTeams
+[2022-11-09T16:58:06Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectApiKeys
+[2022-11-09T16:58:06Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T16:58:06Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T16:58:06Z] WARNING  - Explicitly specify value for tagging
+[2022-11-09T16:58:06Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T16:58:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:58:06Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:58:06Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T16:58:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:58:06Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T16:58:06Z] DEBUG    - Resolved '#/definitions/projectSettings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings'
+[2022-11-09T16:58:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T16:58:06Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectSettings')' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T16:58:06Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition'
+[2022-11-09T16:58:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T16:58:06Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T16:58:06Z] DEBUG    - Resolved '#/definitions/projectTeam' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam'
+[2022-11-09T16:58:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T16:58:06Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectTeams', 'items')' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T16:58:06Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T16:58:06Z] DEBUG    - Resolved '#/definitions/projectApiKey' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey'
+[2022-11-09T16:58:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T16:58:06Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectApiKeys', 'items')' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T16:58:06Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T16:58:06Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json)
+[2022-11-09T16:58:06Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T16:58:06Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T16:58:06Z] DEBUG    -   '#/definitions/projectSettings' -> '#/definitions/projectSettings'
+[2022-11-09T16:58:06Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-11-09T16:58:06Z] DEBUG    -   '#/definitions/projectTeam' -> '#/definitions/projectTeam'
+[2022-11-09T16:58:06Z] DEBUG    -   '#/definitions/projectApiKey' -> '#/definitions/projectApiKey'
+[2022-11-09T16:58:06Z] WARNING  - Resource schema is valid.
+[2022-11-09T16:58:06Z] INFO     - Validating your resource schema...
+[2022-11-09T16:58:06Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/resource-role.yaml
+[2022-11-09T16:58:06Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/resource-role.yaml'
+[2022-11-09T16:58:06Z] DEBUG    - Generate started
+[2022-11-09T16:58:06Z] DEBUG    - Writing Types
+[2022-11-09T16:58:06Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/cmd/resource/model.go'
+[2022-11-09T16:58:06Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/cmd/main.go
+[2022-11-09T16:58:06Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/cmd/main.go'
+[2022-11-09T16:58:06Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/makebuild
+[2022-11-09T16:58:06Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/makebuild'
+[2022-11-09T16:58:06Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs
+[2022-11-09T16:58:06Z] DEBUG    - Writing generated docs
+[2022-11-09T16:58:06Z] DEBUG    - Writing docs projectsettings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/projectsettings.md
+[2022-11-09T16:58:06Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/apikeydefinition.md
+[2022-11-09T16:58:06Z] DEBUG    - Writing docs projectteam.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/projectteam.md
+[2022-11-09T16:58:06Z] DEBUG    - Writing docs projectapikey.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/projectapikey.md
+[2022-11-09T16:58:06Z] DEBUG    - Finished documenting nested properties
+[2022-11-09T16:58:06Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/README.md
+[2022-11-09T16:58:06Z] WARNING  - Generated files for MongoDB::Atlas::Project
+[2022-11-09T16:58:06Z] DEBUG    - Finished generate
+[2022-11-09T17:00:06Z] DEBUG    - Logging set up successfully
+[2022-11-09T17:00:06Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x120bdc9d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-11-09T17:00:06Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project
+[2022-11-09T17:00:06Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/.rpdk-config'
+[2022-11-09T17:00:06Z] INFO     - Validating your resource specification...
+[2022-11-09T17:00:06Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectTeams
+[2022-11-09T17:00:06Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectApiKeys
+[2022-11-09T17:00:06Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T17:00:06Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T17:00:06Z] WARNING  - Explicitly specify value for tagging
+[2022-11-09T17:00:06Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T17:00:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T17:00:06Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T17:00:06Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T17:00:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T17:00:06Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T17:00:06Z] DEBUG    - Resolved '#/definitions/projectSettings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings'
+[2022-11-09T17:00:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T17:00:06Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectSettings')' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T17:00:06Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition'
+[2022-11-09T17:00:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T17:00:06Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T17:00:06Z] DEBUG    - Resolved '#/definitions/projectTeam' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam'
+[2022-11-09T17:00:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T17:00:06Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectTeams', 'items')' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T17:00:06Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T17:00:06Z] DEBUG    - Resolved '#/definitions/projectApiKey' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey'
+[2022-11-09T17:00:06Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T17:00:06Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectApiKeys', 'items')' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T17:00:06Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T17:00:06Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json)
+[2022-11-09T17:00:06Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T17:00:06Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T17:00:06Z] DEBUG    -   '#/definitions/projectSettings' -> '#/definitions/projectSettings'
+[2022-11-09T17:00:06Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-11-09T17:00:06Z] DEBUG    -   '#/definitions/projectTeam' -> '#/definitions/projectTeam'
+[2022-11-09T17:00:06Z] DEBUG    -   '#/definitions/projectApiKey' -> '#/definitions/projectApiKey'
+[2022-11-09T17:00:06Z] WARNING  - Resource schema is valid.
+[2022-11-09T17:00:06Z] INFO     - Validating your resource schema...
+[2022-11-09T17:00:06Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/resource-role.yaml
+[2022-11-09T17:00:06Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/resource-role.yaml'
+[2022-11-09T17:00:06Z] DEBUG    - Generate started
+[2022-11-09T17:00:06Z] DEBUG    - Writing Types
+[2022-11-09T17:00:06Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/cmd/resource/model.go'
+[2022-11-09T17:00:06Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/cmd/main.go
+[2022-11-09T17:00:06Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/cmd/main.go'
+[2022-11-09T17:00:06Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/makebuild
+[2022-11-09T17:00:06Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/makebuild'
+[2022-11-09T17:00:06Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs
+[2022-11-09T17:00:06Z] DEBUG    - Writing generated docs
+[2022-11-09T17:00:06Z] DEBUG    - Writing docs projectsettings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/projectsettings.md
+[2022-11-09T17:00:06Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/apikeydefinition.md
+[2022-11-09T17:00:06Z] DEBUG    - Writing docs projectteam.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/projectteam.md
+[2022-11-09T17:00:06Z] DEBUG    - Writing docs projectapikey.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/projectapikey.md
+[2022-11-09T17:00:06Z] DEBUG    - Finished documenting nested properties
+[2022-11-09T17:00:06Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/docs/README.md
+[2022-11-09T17:00:06Z] WARNING  - Generated files for MongoDB::Atlas::Project
+[2022-11-09T17:00:06Z] DEBUG    - Finished generate
+[2022-11-09T17:00:14Z] DEBUG    - Logging set up successfully
+[2022-11-09T17:00:14Z] DEBUG    - Running test: Namespace(version=False, subparser_name='test', command=<function test at 0x125727eb0>, verbose=1, endpoint='http://127.0.0.1:3001', function_name='TypeFunction', region='us-east-1', role_arn=None, cloudformation_endpoint_url=None, enforce_timeout='30', log_group_name=None, log_role_arn=None, passed_to_pytest=[], docker_image=None)
+[2022-11-09T17:00:14Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project
+[2022-11-09T17:00:14Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/.rpdk-config'
+[2022-11-09T17:00:14Z] INFO     - Validating your resource specification...
+[2022-11-09T17:00:14Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectTeams
+[2022-11-09T17:00:14Z] WARNING  - Explicitly specify value for insertionOrder for array: ProjectApiKeys
+[2022-11-09T17:00:14Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T17:00:14Z] WARNING  - Explicitly specify value for insertionOrder for array: RoleNames
+[2022-11-09T17:00:14Z] WARNING  - Explicitly specify value for tagging
+[2022-11-09T17:00:14Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T17:00:14Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T17:00:14Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T17:00:14Z] DEBUG    - Resolved '#/definitions/Roles' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles'
+[2022-11-09T17:00:14Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/Roles' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T17:00:14Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' to '(<BASE>, 'definitions', 'Roles')'
+[2022-11-09T17:00:14Z] DEBUG    - Resolved '#/definitions/projectSettings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings'
+[2022-11-09T17:00:14Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectSettings' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T17:00:14Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectSettings')' to '(<BASE>, 'definitions', 'projectSettings')'
+[2022-11-09T17:00:14Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition'
+[2022-11-09T17:00:14Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T17:00:14Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-09T17:00:14Z] DEBUG    - Resolved '#/definitions/projectTeam' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam'
+[2022-11-09T17:00:14Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectTeam' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T17:00:14Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectTeams', 'items')' to '(<BASE>, 'definitions', 'projectTeam')'
+[2022-11-09T17:00:14Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectTeam', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T17:00:14Z] DEBUG    - Resolved '#/definitions/projectApiKey' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey'
+[2022-11-09T17:00:14Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json#/definitions/projectApiKey' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T17:00:14Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProjectApiKeys', 'items')' to '(<BASE>, 'definitions', 'projectApiKey')'
+[2022-11-09T17:00:14Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'projectApiKey', 'properties', 'RoleNames', 'items')' (#/definitions/Roles)
+[2022-11-09T17:00:14Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/mongodb-atlas-project.json)
+[2022-11-09T17:00:14Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T17:00:14Z] DEBUG    -   '#/definitions/Roles' -> '#/definitions/Roles'
+[2022-11-09T17:00:14Z] DEBUG    -   '#/definitions/projectSettings' -> '#/definitions/projectSettings'
+[2022-11-09T17:00:14Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-11-09T17:00:14Z] DEBUG    -   '#/definitions/projectTeam' -> '#/definitions/projectTeam'
+[2022-11-09T17:00:14Z] DEBUG    -   '#/definitions/projectApiKey' -> '#/definitions/projectApiKey'
+[2022-11-09T17:00:14Z] WARNING  - Resource schema is valid.
+[2022-11-09T17:00:14Z] INFO     - Validating your resource schema...
+[2022-11-09T17:00:14Z] DEBUG    - Override file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/project/overrides.json' not found. No overrides will be applied
+[2022-11-09T17:00:15Z] DEBUG    - Unhandled exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/cli.py", line 100, in main
+    args.command(args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/test.py", line 380, in test
+    invoke_test(args, project, overrides, inputs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/test.py", line 388, in invoke_test
+    plugin_clients = get_contract_plugin_client(args, project, overrides, inputs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/test.py", line 332, in get_contract_plugin_client
+    plugin_clients["resource_client"] = ResourceClient(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 206, in __init__
+    self._update_schema(schema)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 225, in _update_schema
+    self.write_only_paths = self._properties_to_paths("writeOnlyProperties")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 214, in _properties_to_paths
+    return {fragment_decode(prop, prefix="") for prop in self._schema.get(key, [])}
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/contract/resource_client.py", line 214, in <setcomp>
+    return {fragment_decode(prop, prefix="") for prop in self._schema.get(key, [])}
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/rpdk/core/jsonutils/pointer.py", line 96, in fragment_decode
+    raise ValueError("Expected prefix '{}', but was '{}'".format(prefix, actual))
+ValueError: Expected prefix '', but was 'properties'

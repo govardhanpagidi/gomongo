@@ -1,0 +1,330 @@
+[2022-10-25T16:49:42Z] DEBUG    - Logging set up successfully
+[2022-10-25T16:49:42Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x1213009d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T16:49:42Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster
+[2022-10-25T16:49:42Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/.rpdk-config'
+[2022-10-25T16:49:42Z] INFO     - Validating your resource specification...
+[2022-10-25T16:49:42Z] WARNING  - Explicitly specify value for insertionOrder for array: Labels
+[2022-10-25T16:49:42Z] WARNING  - Explicitly specify value for insertionOrder for array: ReplicationSpecs
+[2022-10-25T16:49:42Z] WARNING  - Explicitly specify value for insertionOrder for array: RegionsConfig
+[2022-10-25T16:49:42Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T16:49:42Z] DEBUG    - Resolved '#/definitions/compute' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/compute'
+[2022-10-25T16:49:42Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/compute' to '(<BASE>, 'definitions', 'compute')'
+[2022-10-25T16:49:42Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' to '(<BASE>, 'definitions', 'compute')'
+[2022-10-25T16:49:42Z] DEBUG    - Resolved '#/definitions/regionsConfig' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/regionsConfig'
+[2022-10-25T16:49:42Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/regionsConfig' to '(<BASE>, 'definitions', 'regionsConfig')'
+[2022-10-25T16:49:42Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'replicationSpec', 'properties', 'RegionsConfig', 'items')' to '(<BASE>, 'definitions', 'regionsConfig')'
+[2022-10-25T16:49:42Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/apiKeyDefinition'
+[2022-10-25T16:49:42Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:49:42Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:49:42Z] DEBUG    - Resolved '#/definitions/autoScaling' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling'
+[2022-10-25T16:49:42Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:49:42Z] DEBUG    - Edge from '(<BASE>, 'properties', 'AutoScaling')' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:49:42Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' (#/definitions/compute)
+[2022-10-25T16:49:42Z] DEBUG    - Resolved '#/definitions/connectionStrings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/connectionStrings'
+[2022-10-25T16:49:42Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/connectionStrings' to '(<BASE>, 'definitions', 'connectionStrings')'
+[2022-10-25T16:49:42Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ConnectionStrings')' to '(<BASE>, 'definitions', 'connectionStrings')'
+[2022-10-25T16:49:42Z] DEBUG    - Resolved '#/definitions/autoScaling' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling'
+[2022-10-25T16:49:42Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:49:42Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProviderSettings', 'properties', 'AutoScaling')' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:49:42Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' (#/definitions/compute)
+[2022-10-25T16:49:42Z] DEBUG    - Resolved '#/definitions/replicationSpec' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/replicationSpec'
+[2022-10-25T16:49:42Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/replicationSpec' to '(<BASE>, 'definitions', 'replicationSpec')'
+[2022-10-25T16:49:42Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ReplicationSpecs', 'items')' to '(<BASE>, 'definitions', 'replicationSpec')'
+[2022-10-25T16:49:42Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'replicationSpec', 'properties', 'RegionsConfig', 'items')' (#/definitions/regionsConfig)
+[2022-10-25T16:49:42Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json)
+[2022-10-25T16:49:42Z] DEBUG    -   '#/definitions/compute' -> '#/definitions/compute'
+[2022-10-25T16:49:42Z] DEBUG    -   '#/definitions/regionsConfig' -> '#/definitions/regionsConfig'
+[2022-10-25T16:49:42Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T16:49:42Z] DEBUG    -   '#/definitions/autoScaling' -> '#/definitions/autoScaling'
+[2022-10-25T16:49:42Z] DEBUG    -   '#/definitions/connectionStrings' -> '#/definitions/connectionStrings'
+[2022-10-25T16:49:42Z] DEBUG    -   '#/definitions/autoScaling' -> '#/definitions/autoScaling'
+[2022-10-25T16:49:42Z] DEBUG    -   '#/definitions/replicationSpec' -> '#/definitions/replicationSpec'
+[2022-10-25T16:49:42Z] WARNING  - Resource schema is valid.
+[2022-10-25T16:49:42Z] INFO     - Validating your resource schema...
+[2022-10-25T16:49:42Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/resource-role.yaml
+[2022-10-25T16:49:42Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/resource-role.yaml'
+[2022-10-25T16:49:42Z] DEBUG    - Generate started
+[2022-10-25T16:49:42Z] DEBUG    - Writing Types
+[2022-10-25T16:49:42Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/resource/model.go'
+[2022-10-25T16:49:42Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/main.go
+[2022-10-25T16:49:42Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/main.go'
+[2022-10-25T16:49:42Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/makebuild
+[2022-10-25T16:49:42Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/makebuild'
+[2022-10-25T16:49:42Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs
+[2022-10-25T16:49:42Z] DEBUG    - Writing generated docs
+[2022-10-25T16:49:42Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/apikeydefinition.md
+[2022-10-25T16:49:42Z] DEBUG    - Writing docs compute.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/compute.md
+[2022-10-25T16:49:42Z] DEBUG    - Writing docs autoscaling.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/autoscaling.md
+[2022-10-25T16:49:42Z] DEBUG    - Writing docs biconnector.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/biconnector.md
+[2022-10-25T16:49:42Z] DEBUG    - Writing docs connectionstrings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/connectionstrings.md
+[2022-10-25T16:49:42Z] DEBUG    - Writing docs providersettings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/providersettings.md
+[2022-10-25T16:49:42Z] DEBUG    - Writing docs regionsconfig.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/regionsconfig.md
+[2022-10-25T16:49:42Z] DEBUG    - Writing docs replicationspec.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/replicationspec.md
+[2022-10-25T16:49:42Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T16:49:42Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/README.md
+[2022-10-25T16:49:42Z] WARNING  - Generated files for MongoDB::Atlas::Cluster
+[2022-10-25T16:49:42Z] DEBUG    - Finished generate
+[2022-10-25T16:50:55Z] DEBUG    - Logging set up successfully
+[2022-10-25T16:50:55Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x12685c9d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T16:50:55Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster
+[2022-10-25T16:50:55Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/.rpdk-config'
+[2022-10-25T16:50:56Z] INFO     - Validating your resource specification...
+[2022-10-25T16:50:56Z] WARNING  - Explicitly specify value for insertionOrder for array: Labels
+[2022-10-25T16:50:56Z] WARNING  - Explicitly specify value for insertionOrder for array: ReplicationSpecs
+[2022-10-25T16:50:56Z] WARNING  - Explicitly specify value for insertionOrder for array: RegionsConfig
+[2022-10-25T16:50:56Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T16:50:56Z] DEBUG    - Resolved '#/definitions/compute' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/compute'
+[2022-10-25T16:50:56Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/compute' to '(<BASE>, 'definitions', 'compute')'
+[2022-10-25T16:50:56Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' to '(<BASE>, 'definitions', 'compute')'
+[2022-10-25T16:50:56Z] DEBUG    - Resolved '#/definitions/regionsConfig' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/regionsConfig'
+[2022-10-25T16:50:56Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/regionsConfig' to '(<BASE>, 'definitions', 'regionsConfig')'
+[2022-10-25T16:50:56Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'replicationSpec', 'properties', 'RegionsConfig', 'items')' to '(<BASE>, 'definitions', 'regionsConfig')'
+[2022-10-25T16:50:56Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/apiKeyDefinition'
+[2022-10-25T16:50:56Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:50:56Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:50:56Z] DEBUG    - Resolved '#/definitions/autoScaling' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling'
+[2022-10-25T16:50:56Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:50:56Z] DEBUG    - Edge from '(<BASE>, 'properties', 'AutoScaling')' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:50:56Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' (#/definitions/compute)
+[2022-10-25T16:50:56Z] DEBUG    - Resolved '#/definitions/connectionStrings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/connectionStrings'
+[2022-10-25T16:50:56Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/connectionStrings' to '(<BASE>, 'definitions', 'connectionStrings')'
+[2022-10-25T16:50:56Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ConnectionStrings')' to '(<BASE>, 'definitions', 'connectionStrings')'
+[2022-10-25T16:50:56Z] DEBUG    - Resolved '#/definitions/autoScaling' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling'
+[2022-10-25T16:50:56Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:50:56Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProviderSettings', 'properties', 'AutoScaling')' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:50:56Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' (#/definitions/compute)
+[2022-10-25T16:50:56Z] DEBUG    - Resolved '#/definitions/replicationSpec' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/replicationSpec'
+[2022-10-25T16:50:56Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/replicationSpec' to '(<BASE>, 'definitions', 'replicationSpec')'
+[2022-10-25T16:50:56Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ReplicationSpecs', 'items')' to '(<BASE>, 'definitions', 'replicationSpec')'
+[2022-10-25T16:50:56Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'replicationSpec', 'properties', 'RegionsConfig', 'items')' (#/definitions/regionsConfig)
+[2022-10-25T16:50:56Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json)
+[2022-10-25T16:50:56Z] DEBUG    -   '#/definitions/compute' -> '#/definitions/compute'
+[2022-10-25T16:50:56Z] DEBUG    -   '#/definitions/regionsConfig' -> '#/definitions/regionsConfig'
+[2022-10-25T16:50:56Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T16:50:56Z] DEBUG    -   '#/definitions/autoScaling' -> '#/definitions/autoScaling'
+[2022-10-25T16:50:56Z] DEBUG    -   '#/definitions/connectionStrings' -> '#/definitions/connectionStrings'
+[2022-10-25T16:50:56Z] DEBUG    -   '#/definitions/autoScaling' -> '#/definitions/autoScaling'
+[2022-10-25T16:50:56Z] DEBUG    -   '#/definitions/replicationSpec' -> '#/definitions/replicationSpec'
+[2022-10-25T16:50:56Z] WARNING  - Resource schema is valid.
+[2022-10-25T16:50:56Z] INFO     - Validating your resource schema...
+[2022-10-25T16:50:56Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/resource-role.yaml
+[2022-10-25T16:50:56Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/resource-role.yaml'
+[2022-10-25T16:50:56Z] DEBUG    - Generate started
+[2022-10-25T16:50:56Z] DEBUG    - Writing Types
+[2022-10-25T16:50:56Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/resource/model.go'
+[2022-10-25T16:50:56Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/main.go
+[2022-10-25T16:50:56Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/main.go'
+[2022-10-25T16:50:56Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/makebuild
+[2022-10-25T16:50:56Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/makebuild'
+[2022-10-25T16:50:56Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs
+[2022-10-25T16:50:56Z] DEBUG    - Writing generated docs
+[2022-10-25T16:50:56Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/apikeydefinition.md
+[2022-10-25T16:50:56Z] DEBUG    - Writing docs compute.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/compute.md
+[2022-10-25T16:50:56Z] DEBUG    - Writing docs autoscaling.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/autoscaling.md
+[2022-10-25T16:50:56Z] DEBUG    - Writing docs biconnector.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/biconnector.md
+[2022-10-25T16:50:56Z] DEBUG    - Writing docs connectionstrings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/connectionstrings.md
+[2022-10-25T16:50:56Z] DEBUG    - Writing docs providersettings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/providersettings.md
+[2022-10-25T16:50:56Z] DEBUG    - Writing docs regionsconfig.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/regionsconfig.md
+[2022-10-25T16:50:56Z] DEBUG    - Writing docs replicationspec.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/replicationspec.md
+[2022-10-25T16:50:56Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T16:50:56Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/README.md
+[2022-10-25T16:50:56Z] WARNING  - Generated files for MongoDB::Atlas::Cluster
+[2022-10-25T16:50:56Z] DEBUG    - Finished generate
+[2022-10-25T16:52:50Z] DEBUG    - Logging set up successfully
+[2022-10-25T16:52:50Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x11f7849d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T16:52:50Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster
+[2022-10-25T16:52:50Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/.rpdk-config'
+[2022-10-25T16:52:51Z] INFO     - Validating your resource specification...
+[2022-10-25T16:52:51Z] WARNING  - Explicitly specify value for insertionOrder for array: Labels
+[2022-10-25T16:52:51Z] WARNING  - Explicitly specify value for insertionOrder for array: ReplicationSpecs
+[2022-10-25T16:52:51Z] WARNING  - Explicitly specify value for insertionOrder for array: RegionsConfig
+[2022-10-25T16:52:51Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T16:52:51Z] DEBUG    - Resolved '#/definitions/compute' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/compute'
+[2022-10-25T16:52:51Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/compute' to '(<BASE>, 'definitions', 'compute')'
+[2022-10-25T16:52:51Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' to '(<BASE>, 'definitions', 'compute')'
+[2022-10-25T16:52:51Z] DEBUG    - Resolved '#/definitions/regionsConfig' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/regionsConfig'
+[2022-10-25T16:52:51Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/regionsConfig' to '(<BASE>, 'definitions', 'regionsConfig')'
+[2022-10-25T16:52:51Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'replicationSpec', 'properties', 'RegionsConfig', 'items')' to '(<BASE>, 'definitions', 'regionsConfig')'
+[2022-10-25T16:52:51Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/apiKeyDefinition'
+[2022-10-25T16:52:51Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:52:51Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T16:52:51Z] DEBUG    - Resolved '#/definitions/autoScaling' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling'
+[2022-10-25T16:52:51Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:52:51Z] DEBUG    - Edge from '(<BASE>, 'properties', 'AutoScaling')' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:52:51Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' (#/definitions/compute)
+[2022-10-25T16:52:51Z] DEBUG    - Resolved '#/definitions/connectionStrings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/connectionStrings'
+[2022-10-25T16:52:51Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/connectionStrings' to '(<BASE>, 'definitions', 'connectionStrings')'
+[2022-10-25T16:52:51Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ConnectionStrings')' to '(<BASE>, 'definitions', 'connectionStrings')'
+[2022-10-25T16:52:51Z] DEBUG    - Resolved '#/definitions/autoScaling' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling'
+[2022-10-25T16:52:51Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:52:51Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProviderSettings', 'properties', 'AutoScaling')' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T16:52:51Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' (#/definitions/compute)
+[2022-10-25T16:52:51Z] DEBUG    - Resolved '#/definitions/replicationSpec' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/replicationSpec'
+[2022-10-25T16:52:51Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/replicationSpec' to '(<BASE>, 'definitions', 'replicationSpec')'
+[2022-10-25T16:52:51Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ReplicationSpecs', 'items')' to '(<BASE>, 'definitions', 'replicationSpec')'
+[2022-10-25T16:52:51Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'replicationSpec', 'properties', 'RegionsConfig', 'items')' (#/definitions/regionsConfig)
+[2022-10-25T16:52:51Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json)
+[2022-10-25T16:52:51Z] DEBUG    -   '#/definitions/compute' -> '#/definitions/compute'
+[2022-10-25T16:52:51Z] DEBUG    -   '#/definitions/regionsConfig' -> '#/definitions/regionsConfig'
+[2022-10-25T16:52:51Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T16:52:51Z] DEBUG    -   '#/definitions/autoScaling' -> '#/definitions/autoScaling'
+[2022-10-25T16:52:51Z] DEBUG    -   '#/definitions/connectionStrings' -> '#/definitions/connectionStrings'
+[2022-10-25T16:52:51Z] DEBUG    -   '#/definitions/autoScaling' -> '#/definitions/autoScaling'
+[2022-10-25T16:52:51Z] DEBUG    -   '#/definitions/replicationSpec' -> '#/definitions/replicationSpec'
+[2022-10-25T16:52:51Z] WARNING  - Resource schema is valid.
+[2022-10-25T16:52:51Z] INFO     - Validating your resource schema...
+[2022-10-25T16:52:51Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/resource-role.yaml
+[2022-10-25T16:52:51Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/resource-role.yaml'
+[2022-10-25T16:52:51Z] DEBUG    - Generate started
+[2022-10-25T16:52:51Z] DEBUG    - Writing Types
+[2022-10-25T16:52:51Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/resource/model.go'
+[2022-10-25T16:52:51Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/main.go
+[2022-10-25T16:52:51Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/main.go'
+[2022-10-25T16:52:51Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/makebuild
+[2022-10-25T16:52:51Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/makebuild'
+[2022-10-25T16:52:51Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs
+[2022-10-25T16:52:51Z] DEBUG    - Writing generated docs
+[2022-10-25T16:52:51Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/apikeydefinition.md
+[2022-10-25T16:52:51Z] DEBUG    - Writing docs compute.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/compute.md
+[2022-10-25T16:52:51Z] DEBUG    - Writing docs autoscaling.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/autoscaling.md
+[2022-10-25T16:52:51Z] DEBUG    - Writing docs biconnector.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/biconnector.md
+[2022-10-25T16:52:51Z] DEBUG    - Writing docs connectionstrings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/connectionstrings.md
+[2022-10-25T16:52:51Z] DEBUG    - Writing docs providersettings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/providersettings.md
+[2022-10-25T16:52:51Z] DEBUG    - Writing docs regionsconfig.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/regionsconfig.md
+[2022-10-25T16:52:51Z] DEBUG    - Writing docs replicationspec.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/replicationspec.md
+[2022-10-25T16:52:51Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T16:52:51Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/README.md
+[2022-10-25T16:52:51Z] WARNING  - Generated files for MongoDB::Atlas::Cluster
+[2022-10-25T16:52:51Z] DEBUG    - Finished generate
+[2022-10-25T17:00:36Z] DEBUG    - Logging set up successfully
+[2022-10-25T17:00:36Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x1259249d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-10-25T17:00:36Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster
+[2022-10-25T17:00:36Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/.rpdk-config'
+[2022-10-25T17:00:36Z] INFO     - Validating your resource specification...
+[2022-10-25T17:00:36Z] WARNING  - Explicitly specify value for insertionOrder for array: Labels
+[2022-10-25T17:00:36Z] WARNING  - Explicitly specify value for insertionOrder for array: ReplicationSpecs
+[2022-10-25T17:00:36Z] WARNING  - Explicitly specify value for insertionOrder for array: RegionsConfig
+[2022-10-25T17:00:36Z] WARNING  - Explicitly specify value for tagging
+[2022-10-25T17:00:36Z] DEBUG    - Resolved '#/definitions/compute' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/compute'
+[2022-10-25T17:00:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/compute' to '(<BASE>, 'definitions', 'compute')'
+[2022-10-25T17:00:36Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' to '(<BASE>, 'definitions', 'compute')'
+[2022-10-25T17:00:36Z] DEBUG    - Resolved '#/definitions/regionsConfig' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/regionsConfig'
+[2022-10-25T17:00:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/regionsConfig' to '(<BASE>, 'definitions', 'regionsConfig')'
+[2022-10-25T17:00:36Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'replicationSpec', 'properties', 'RegionsConfig', 'items')' to '(<BASE>, 'definitions', 'regionsConfig')'
+[2022-10-25T17:00:36Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/apiKeyDefinition'
+[2022-10-25T17:00:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T17:00:36Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-10-25T17:00:36Z] DEBUG    - Resolved '#/definitions/autoScaling' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling'
+[2022-10-25T17:00:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T17:00:36Z] DEBUG    - Edge from '(<BASE>, 'properties', 'AutoScaling')' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T17:00:36Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' (#/definitions/compute)
+[2022-10-25T17:00:36Z] DEBUG    - Resolved '#/definitions/connectionStrings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/connectionStrings'
+[2022-10-25T17:00:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/connectionStrings' to '(<BASE>, 'definitions', 'connectionStrings')'
+[2022-10-25T17:00:36Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ConnectionStrings')' to '(<BASE>, 'definitions', 'connectionStrings')'
+[2022-10-25T17:00:36Z] DEBUG    - Resolved '#/definitions/autoScaling' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling'
+[2022-10-25T17:00:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T17:00:36Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProviderSettings', 'properties', 'AutoScaling')' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-10-25T17:00:36Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' (#/definitions/compute)
+[2022-10-25T17:00:36Z] DEBUG    - Resolved '#/definitions/replicationSpec' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/replicationSpec'
+[2022-10-25T17:00:36Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/replicationSpec' to '(<BASE>, 'definitions', 'replicationSpec')'
+[2022-10-25T17:00:36Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ReplicationSpecs', 'items')' to '(<BASE>, 'definitions', 'replicationSpec')'
+[2022-10-25T17:00:36Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'replicationSpec', 'properties', 'RegionsConfig', 'items')' (#/definitions/regionsConfig)
+[2022-10-25T17:00:36Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json)
+[2022-10-25T17:00:36Z] DEBUG    -   '#/definitions/compute' -> '#/definitions/compute'
+[2022-10-25T17:00:36Z] DEBUG    -   '#/definitions/regionsConfig' -> '#/definitions/regionsConfig'
+[2022-10-25T17:00:36Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-10-25T17:00:36Z] DEBUG    -   '#/definitions/autoScaling' -> '#/definitions/autoScaling'
+[2022-10-25T17:00:36Z] DEBUG    -   '#/definitions/connectionStrings' -> '#/definitions/connectionStrings'
+[2022-10-25T17:00:36Z] DEBUG    -   '#/definitions/autoScaling' -> '#/definitions/autoScaling'
+[2022-10-25T17:00:36Z] DEBUG    -   '#/definitions/replicationSpec' -> '#/definitions/replicationSpec'
+[2022-10-25T17:00:36Z] WARNING  - Resource schema is valid.
+[2022-10-25T17:00:36Z] INFO     - Validating your resource schema...
+[2022-10-25T17:00:36Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/resource-role.yaml
+[2022-10-25T17:00:36Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/resource-role.yaml'
+[2022-10-25T17:00:36Z] DEBUG    - Generate started
+[2022-10-25T17:00:36Z] DEBUG    - Writing Types
+[2022-10-25T17:00:36Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/resource/model.go'
+[2022-10-25T17:00:36Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/main.go
+[2022-10-25T17:00:36Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/main.go'
+[2022-10-25T17:00:36Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/makebuild
+[2022-10-25T17:00:36Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/makebuild'
+[2022-10-25T17:00:36Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs
+[2022-10-25T17:00:36Z] DEBUG    - Writing generated docs
+[2022-10-25T17:00:36Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/apikeydefinition.md
+[2022-10-25T17:00:36Z] DEBUG    - Writing docs compute.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/compute.md
+[2022-10-25T17:00:36Z] DEBUG    - Writing docs autoscaling.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/autoscaling.md
+[2022-10-25T17:00:36Z] DEBUG    - Writing docs biconnector.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/biconnector.md
+[2022-10-25T17:00:36Z] DEBUG    - Writing docs connectionstrings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/connectionstrings.md
+[2022-10-25T17:00:36Z] DEBUG    - Writing docs providersettings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/providersettings.md
+[2022-10-25T17:00:36Z] DEBUG    - Writing docs regionsconfig.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/regionsconfig.md
+[2022-10-25T17:00:36Z] DEBUG    - Writing docs replicationspec.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/replicationspec.md
+[2022-10-25T17:00:36Z] DEBUG    - Finished documenting nested properties
+[2022-10-25T17:00:36Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/README.md
+[2022-10-25T17:00:36Z] WARNING  - Generated files for MongoDB::Atlas::Cluster
+[2022-10-25T17:00:36Z] DEBUG    - Finished generate
+[2022-11-08T21:01:58Z] DEBUG    - Logging set up successfully
+[2022-11-08T21:01:58Z] DEBUG    - Running generate: Namespace(version=False, subparser_name='generate', command=<function generate at 0x11a7c49d0>, verbose=0, endpoint_url=None, region=None, target_schemas=[])
+[2022-11-08T21:01:58Z] DEBUG    - Root directory: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster
+[2022-11-08T21:01:58Z] DEBUG    - Loading project file '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/.rpdk-config'
+[2022-11-08T21:01:58Z] INFO     - Validating your resource specification...
+[2022-11-08T21:01:58Z] WARNING  - Explicitly specify value for insertionOrder for array: Labels
+[2022-11-08T21:01:58Z] WARNING  - Explicitly specify value for insertionOrder for array: ReplicationSpecs
+[2022-11-08T21:01:58Z] WARNING  - Explicitly specify value for insertionOrder for array: RegionsConfig
+[2022-11-08T21:01:58Z] WARNING  - Explicitly specify value for tagging
+[2022-11-08T21:01:58Z] DEBUG    - Resolved '#/definitions/compute' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/compute'
+[2022-11-08T21:01:58Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/compute' to '(<BASE>, 'definitions', 'compute')'
+[2022-11-08T21:01:58Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' to '(<BASE>, 'definitions', 'compute')'
+[2022-11-08T21:01:58Z] DEBUG    - Resolved '#/definitions/regionsConfig' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/regionsConfig'
+[2022-11-08T21:01:58Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/regionsConfig' to '(<BASE>, 'definitions', 'regionsConfig')'
+[2022-11-08T21:01:58Z] DEBUG    - Edge from '(<BASE>, 'definitions', 'replicationSpec', 'properties', 'RegionsConfig', 'items')' to '(<BASE>, 'definitions', 'regionsConfig')'
+[2022-11-08T21:01:58Z] DEBUG    - Resolved '#/definitions/apiKeyDefinition' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/apiKeyDefinition'
+[2022-11-08T21:01:58Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/apiKeyDefinition' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-08T21:01:58Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ApiKeys')' to '(<BASE>, 'definitions', 'apiKeyDefinition')'
+[2022-11-08T21:01:58Z] DEBUG    - Resolved '#/definitions/autoScaling' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling'
+[2022-11-08T21:01:58Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-11-08T21:01:58Z] DEBUG    - Edge from '(<BASE>, 'properties', 'AutoScaling')' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-11-08T21:01:58Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' (#/definitions/compute)
+[2022-11-08T21:01:58Z] DEBUG    - Resolved '#/definitions/connectionStrings' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/connectionStrings'
+[2022-11-08T21:01:58Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/connectionStrings' to '(<BASE>, 'definitions', 'connectionStrings')'
+[2022-11-08T21:01:58Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ConnectionStrings')' to '(<BASE>, 'definitions', 'connectionStrings')'
+[2022-11-08T21:01:58Z] DEBUG    - Resolved '#/definitions/autoScaling' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling'
+[2022-11-08T21:01:58Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/autoScaling' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-11-08T21:01:58Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ProviderSettings', 'properties', 'AutoScaling')' to '(<BASE>, 'definitions', 'autoScaling')'
+[2022-11-08T21:01:58Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'autoScaling', 'properties', 'Compute')' (#/definitions/compute)
+[2022-11-08T21:01:58Z] DEBUG    - Resolved '#/definitions/replicationSpec' to 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/replicationSpec'
+[2022-11-08T21:01:58Z] DEBUG    - Parsed 'file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json#/definitions/replicationSpec' to '(<BASE>, 'definitions', 'replicationSpec')'
+[2022-11-08T21:01:58Z] DEBUG    - Edge from '(<BASE>, 'properties', 'ReplicationSpecs', 'items')' to '(<BASE>, 'definitions', 'replicationSpec')'
+[2022-11-08T21:01:58Z] DEBUG    - Already visited '(<BASE>, 'definitions', 'replicationSpec', 'properties', 'RegionsConfig', 'items')' (#/definitions/regionsConfig)
+[2022-11-08T21:01:58Z] DEBUG    - Rewriting refs in '<BASE>' (file:///Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/mongodb-atlas-cluster.json)
+[2022-11-08T21:01:58Z] DEBUG    -   '#/definitions/compute' -> '#/definitions/compute'
+[2022-11-08T21:01:58Z] DEBUG    -   '#/definitions/regionsConfig' -> '#/definitions/regionsConfig'
+[2022-11-08T21:01:58Z] DEBUG    -   '#/definitions/apiKeyDefinition' -> '#/definitions/apiKeyDefinition'
+[2022-11-08T21:01:58Z] DEBUG    -   '#/definitions/autoScaling' -> '#/definitions/autoScaling'
+[2022-11-08T21:01:58Z] DEBUG    -   '#/definitions/connectionStrings' -> '#/definitions/connectionStrings'
+[2022-11-08T21:01:58Z] DEBUG    -   '#/definitions/autoScaling' -> '#/definitions/autoScaling'
+[2022-11-08T21:01:58Z] DEBUG    -   '#/definitions/replicationSpec' -> '#/definitions/replicationSpec'
+[2022-11-08T21:01:58Z] WARNING  - Resource schema is valid.
+[2022-11-08T21:01:58Z] INFO     - Validating your resource schema...
+[2022-11-08T21:01:58Z] DEBUG    - Writing Execution Role CloudFormation template: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/resource-role.yaml
+[2022-11-08T21:01:58Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/resource-role.yaml'
+[2022-11-08T21:01:58Z] DEBUG    - Generate started
+[2022-11-08T21:01:58Z] DEBUG    - Writing Types
+[2022-11-08T21:01:58Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/resource/model.go'
+[2022-11-08T21:01:58Z] DEBUG    - Writing project: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/main.go
+[2022-11-08T21:01:58Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/cmd/main.go'
+[2022-11-08T21:01:58Z] DEBUG    - Writing makebuild: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/makebuild
+[2022-11-08T21:01:58Z] DEBUG    - Overwriting '/Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/makebuild'
+[2022-11-08T21:01:59Z] DEBUG    - Removing generated docs: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs
+[2022-11-08T21:01:59Z] DEBUG    - Writing generated docs
+[2022-11-08T21:01:59Z] DEBUG    - Writing docs apikeydefinition.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/apikeydefinition.md
+[2022-11-08T21:01:59Z] DEBUG    - Writing docs compute.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/compute.md
+[2022-11-08T21:01:59Z] DEBUG    - Writing docs autoscaling.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/autoscaling.md
+[2022-11-08T21:01:59Z] DEBUG    - Writing docs biconnector.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/biconnector.md
+[2022-11-08T21:01:59Z] DEBUG    - Writing docs connectionstrings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/connectionstrings.md
+[2022-11-08T21:01:59Z] DEBUG    - Writing docs providersettings.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/providersettings.md
+[2022-11-08T21:01:59Z] DEBUG    - Writing docs regionsconfig.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/regionsconfig.md
+[2022-11-08T21:01:59Z] DEBUG    - Writing docs replicationspec.md: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/replicationspec.md
+[2022-11-08T21:01:59Z] DEBUG    - Finished documenting nested properties
+[2022-11-08T21:01:59Z] DEBUG    - Writing docs README: /Users/govardhanpagidi/workspace/mongo/cfn/repo/mongodb/mongodbatlas-cloudformation-resources/cfn-resources/cluster/docs/README.md
+[2022-11-08T21:01:59Z] WARNING  - Generated files for MongoDB::Atlas::Cluster
+[2022-11-08T21:01:59Z] DEBUG    - Finished generate
