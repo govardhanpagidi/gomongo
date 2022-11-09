@@ -28,7 +28,11 @@ _SKIP_BUILD=${SKIP_BUILD:-false}
 _BUILD_ONLY=${BUILD_ONLY:-false}
 _SUBMIT_ONLY=${SUBMIT_ONLY:-false}
 _DEFAULT_LOG_LEVEL=${LOG_LEVEL:-info}
-AWS_ORG_ID=63350255419cf25e3d511c95
+
+[[ "$ATLAS_ORG_ID" == "" ]] && echo "ATLAS_ORG_ID not set exiting..." && exit 1
+[[ "$ATLAS_PUBLIC_KEY" == "" ]] && echo "ATLAS_PUBLIC_KEY not set exiting..." && exit 1
+[[ "$ATLAS_PRIVATE_KEY" == "" ]] && echo "ATLAS_PRIVATE_KEY not set exiting..." && exit 1
+
 [[ "${_DRY_RUN}" == "true" ]] && echo "*************** DRY_RUN mode enabled **************"
 
 # Default, find all the directory names with the json custom resource schema files.
