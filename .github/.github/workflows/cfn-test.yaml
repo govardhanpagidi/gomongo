@@ -16,3 +16,8 @@ jobs:
       - name: test the resources
         uses: ./.github/actions/atlas-cfn-test
                 - name: CFN TEST the resources
+                run: |
+                  ATLAS_ORG_ID_CFN = ${{ secrets.ATLAS_ORG_ID_CFN }}
+                  ATLAS_PUBLIC_KEY_CFN = ${{ secrets.ATLAS_PUBLIC_KEY_CFN }}
+                  ATLAS_PRIVATE_KEY_CFN = ${{ secrets.ATLAS_PRIVATE_KEY_CFN }}
+                  echo "set atlas crds........."
