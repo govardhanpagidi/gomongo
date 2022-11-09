@@ -18,14 +18,13 @@ COPY requirements.txt /
 RUN pip3 install -r /requirements.txt
 RUN apt-get update && apt-get install -y jq
 
-RUN apt-get install gnupg
-RUN sudo apt-get install gnupgz
-RUN echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu/dists/jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-RUN apt-get update
-RUN apt-get install -y mongocli
-RUN mongocli help
-
-
+RUN MCLI_TAG=$(curl -sL --header "Accept: application/json" https://github.com/mongodb/mongocli/releases/latest | jq -r '.["tag_name"]') && \
+    MCLI_VERSION=$(echo $MCLI_TAG | cut -dv -f2) && \
+    MCLI_DEB="mongocli_${MCLI_VERSION}_linux_x86_64.deb" && \
+    curl -OL https://github.com/mongodb/mongocli/releases/download/${MCLI_TAG}/${MCLI_DEB} && \
+    echo "About to install mongocli from: ${MCLI_DEB}" && \
+    dpkg -i ${MCLI_DEB}
+RUN mongocli --help
 #WORKDIR /atlas-cfn
 #COPY atlas-cfn-deploy.py atlas-cfn-deploy.py  
 #COPY atlas-cfn-stack-cleaner.sh atlas-cfn-stack-cleaner.sh
