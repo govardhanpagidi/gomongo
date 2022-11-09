@@ -28,7 +28,7 @@ _SKIP_BUILD=${SKIP_BUILD:-false}
 _BUILD_ONLY=${BUILD_ONLY:-false}
 _SUBMIT_ONLY=${SUBMIT_ONLY:-false}
 _DEFAULT_LOG_LEVEL=${LOG_LEVEL:-info}
-
+AWS_ORG_ID=63350255419cf25e3d511c95
 [[ "${_DRY_RUN}" == "true" ]] && echo "*************** DRY_RUN mode enabled **************"
 
 # Default, find all the directory names with the json custom resource schema files.
