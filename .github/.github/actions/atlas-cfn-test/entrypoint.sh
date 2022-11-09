@@ -17,11 +17,14 @@ touch ~/.aws/credentials
 echo "[711489243244_AdministratorAccess]
 aws_access_key_id = $INPUT_AWS_ACCESS_KEY_ID
 aws_secret_access_key = $INPUT_AWS_SECRET_ACCESS_KEY
+export ATLAS_PUBLIC_KEY = $INPUT_ATLAS_PUBLIC_KEY_CFN
+export ATLAS_PRIVATE_KEY = $INPUT_ATLAS_PRIVATE_KEY_CFN
+export ATLAS_ORG_ID = $INPUT_ATLAS_ORG_ID_CFN
 region = $INPUT_AWS_DEFAULT_REGION" > ~/.aws/credentials
 touch ~/.aws/config
 echo "[profile 711489243244_AdministratorAccess]
 region = $INPUT_AWS_DEFAULT_REGION
 output = json " > ~/.aws/config
 cd cfn-resources
-BUILD_ONLY=1 CFN_FLAGS="--verbose --set-default --region ${INPUT_AWS_DEFAULT_REGION}" ./cfn-testing-helper.sh
+BUILD_ONLY=1 CFN_FLAGS="--verbose --set-default --region ${INPUT_AWS_DEFAULT_REGION}" ./cfn-submit-helper.sh
 cat project/rpdk.log
