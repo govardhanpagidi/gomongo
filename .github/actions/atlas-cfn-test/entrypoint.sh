@@ -22,6 +22,14 @@ touch ~/.aws/config
 echo "[profile 711489243244_AdministratorAccess]
 region = $INPUT_AWS_DEFAULT_REGION
 output = json " > ~/.aws/config
+
+echo "setting up env vars"
+
+export ATLAS_PUBLIC_KEY=$INPUT_ATLAS_PUBLIC_KEY_CFN
+export ATLAS_PRIVATE_KEY=$INPUT_ATLAS_PRIVATE_KEY_CFN
+export ATLAS_ORG_ID=$INPUT_ATLAS_ORG_ID_CFN
+echo "env vars:$ATLAS_ORG_ID"
+
 cd cfn-resources
-BUILD_ONLY=1 CFN_FLAGS="--verbose --set-default --region ${INPUT_AWS_DEFAULT_REGION}" ./cfn-testing-helper.sh
+./cfn-testing-helper.sh
 cat project/rpdk.log
