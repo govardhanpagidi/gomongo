@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       sam_service:
+        image: cnadiminti/aws-sam-local
         ports:
           - 3001:3001
     steps:
