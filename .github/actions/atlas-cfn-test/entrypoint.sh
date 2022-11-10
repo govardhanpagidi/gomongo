@@ -14,12 +14,12 @@ env
 #exec "$@"
 mkdir -p ~/.aws
 touch ~/.aws/credentials
-echo "[711489243244_AdministratorAccess]
+echo "[default]
 aws_access_key_id = $INPUT_AWS_ACCESS_KEY_ID
 aws_secret_access_key = $INPUT_AWS_SECRET_ACCESS_KEY
 region = $INPUT_AWS_DEFAULT_REGION" > ~/.aws/credentials
 touch ~/.aws/config
-echo "[profile 711489243244_AdministratorAccess]
+echo "[profile default]
 region = $INPUT_AWS_DEFAULT_REGION
 output = json " > ~/.aws/config
 
