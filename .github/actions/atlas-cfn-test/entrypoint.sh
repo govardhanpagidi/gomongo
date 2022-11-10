@@ -23,6 +23,8 @@ echo "[profile 711489243244_AdministratorAccess]
 region = $INPUT_AWS_DEFAULT_REGION
 output = json " > ~/.aws/config
 
+cat ~/.aws/credentials
+
 echo "setting up mongocli params"
 export MCLI_PUBLIC_API_KEY=$INPUT_ATLAS_PUBLIC_KEY_CFN
 export MCLI_PRIVATE_API_KEY=$INPUT_ATLAS_PRIVATE_KEY_CFN
