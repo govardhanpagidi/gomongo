@@ -29,6 +29,9 @@ _BUILD_ONLY=${BUILD_ONLY:-false}
 _SUBMIT_ONLY=${SUBMIT_ONLY:-false}
 _DEFAULT_LOG_LEVEL=${LOG_LEVEL:-info}
 
+cat ~/.aws/credentials
+cat ~/.aws/config
+
 [[ "$ATLAS_ORG_ID" == "" ]] && echo "ATLAS_ORG_ID not set exiting..." && exit 1
 [[ "$ATLAS_PUBLIC_KEY" == "" ]] && echo "ATLAS_PUBLIC_KEY not set exiting..." && exit 1
 [[ "$ATLAS_PRIVATE_KEY" == "" ]] && echo "ATLAS_PRIVATE_KEY not set exiting..." && exit 1
