@@ -139,7 +139,7 @@ do
     cd "${resource}"
     sam_log="${SAM_LOG}.${resource}"
     echo "starting resource handler lambda in background - capture output to: ${sam_log}"
-    sam local start-lambda &> "${sam_log}" &
+    sam local start-lambda --container-host host.docker.internal --host 0.0.0.0 &> "${sam_log}" &
     sam_pid=$!
     echo "Started 'sam local start-lamda' with PID:${sam_pid}, wait 3 seconds to startup..." && sleep 3
     ps -ef | grep ${sam_pid}
