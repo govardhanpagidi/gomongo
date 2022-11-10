@@ -10,6 +10,10 @@ jobs:
   atlas-cfn-deploy:
     name: atlas-cfn-test
     runs-on: ubuntu-latest
+    services:
+      sam_service:
+        ports:
+          - 3001:3001
     steps:
       - uses: actions/checkout@v2
         name: pull code
