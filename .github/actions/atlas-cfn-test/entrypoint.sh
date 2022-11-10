@@ -23,20 +23,13 @@ echo "[profile 711489243244_AdministratorAccess]
 region = $INPUT_AWS_DEFAULT_REGION
 output = json " > ~/.aws/config
 
-echo "setting up mongocli"
+echo "setting up mongocli params"
+export MCLI_PUBLIC_API_KEY=$INPUT_ATLAS_PUBLIC_KEY_CFN
+export MCLI_PRIVATE_API_KEY=$INPUT_ATLAS_PRIVATE_KEY_CFN
+export MCLI_ORG_ID=$INPUT_ATLAS_ORG_ID_CFN
+export MCLI_OUTPUT=json
 
-mkdir -p "$HOME"/.config
-mkdir -p "$HOME"/.config/mongocli
-
-touch "$HOME"/.config/mongocli/config.toml
-echo "[default]
-org_id = '$INPUT_ATLAS_ORG_ID_CFN'
-public_api_key = '$INPUT_ATLAS_PUBLIC_KEY_CFN'
-private_api_key = '$INPUT_ATLAS_PRIVATE_KEY_CFN'
-service = 'cloud'
-output = 'json' " > "$HOME"/.config/mongocli/config.toml
-
-
+echo "setting up env vars"
 export ATLAS_PUBLIC_KEY=$INPUT_ATLAS_PUBLIC_KEY_CFN
 export ATLAS_PRIVATE_KEY=$INPUT_ATLAS_PRIVATE_KEY_CFN
 export ATLAS_ORG_ID=$INPUT_ATLAS_ORG_ID_CFN
