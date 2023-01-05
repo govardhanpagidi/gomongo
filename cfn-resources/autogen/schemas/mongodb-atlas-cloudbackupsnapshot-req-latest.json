@@ -1,0 +1,50 @@
+{
+  "CreateFields": {
+    "InputParams": [
+      "GroupId",
+      "Description",
+      "Links",
+      "RetentionInDays",
+      "ApiKeys",
+      "ClusterName"
+    ],
+    "RequiredParams": ["Links"]
+  },
+  "ReadFields": {
+    "InputParams": [
+      "TotalCount",
+      "Status",
+      "CloudProvider",
+      "IncludeCount",
+      "Members",
+      "ReplicaSetName",
+      "Links",
+      "GroupId",
+      "MasterKeyUUID",
+      "SnapshotIds",
+      "RetentionInDays",
+      "ExpiresAt",
+      "PolicyItems",
+      "Results",
+      "CreatedAt",
+      "SnapshotId",
+      "Description",
+      "ApiKeys",
+      "PageNum",
+      "ItemsPerPage",
+      "SnapshotType",
+      "ClusterName",
+      "Id",
+      "Type",
+      "FrequencyType",
+      "MongodVersion",
+      "StorageSizeBytes"
+    ],
+    "RequiredParams": ["GroupId", "ClusterName", "SnapshotId"]
+  },
+  "UpdateFields": {},
+  "DeleteFields": {
+    "RequiredParams": ["GroupId", "ClusterName", "SnapshotId"]
+  },
+  "ListFields": {}
+}

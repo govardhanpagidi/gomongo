@@ -1,0 +1,60 @@
+{
+  "CreateFields": {
+    "InputParams": [
+      "Results",
+      "ItemsPerPage",
+      "DatabaseName",
+      "ApiKeys",
+      "TotalCount",
+      "_id",
+      "CreatedAt",
+      "MonthsUntilExpiration",
+      "NotAfter",
+      "Links",
+      "Username",
+      "GroupId",
+      "PageNum",
+      "Subject",
+      "IncludeCount"
+    ],
+    "RequiredParams": ["Links"]
+  },
+  "ReadFields": {
+    "InputParams": [
+      "Results",
+      "ItemsPerPage",
+      "DatabaseName",
+      "ApiKeys",
+      "TotalCount",
+      "_id",
+      "CreatedAt",
+      "MonthsUntilExpiration",
+      "NotAfter",
+      "Links",
+      "Username",
+      "GroupId",
+      "PageNum",
+      "Subject",
+      "IncludeCount"
+    ],
+    "RequiredParams": ["GroupId", "Username"]
+  },
+  "UpdateFields": {
+    "InputParams": [
+      "Results",
+      "ItemsPerPage",
+      "DatabaseName",
+      "Username",
+      "ApiKeys",
+      "GroupId",
+      "IncludeCount",
+      "PageNum",
+      "Links",
+      "TotalCount"
+    ]
+  },
+  "DeleteFields": {
+    "RequiredParams": ["GroupId", "DatabaseName", "Username"]
+  },
+  "ListFields": {}
+}

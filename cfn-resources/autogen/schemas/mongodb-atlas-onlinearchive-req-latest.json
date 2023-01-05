@@ -1,0 +1,77 @@
+{
+  "CreateFields": {
+    "InputParams": [
+      "GroupId",
+      "CollectionType",
+      "Criteria",
+      "DbName",
+      "ClusterName",
+      "PartitionFields",
+      "CollName",
+      "ApiKeys",
+      "Id",
+      "Type",
+      "Schedule",
+      "State"
+    ],
+    "RequiredParams": ["Criteria"]
+  },
+  "ReadFields": {
+    "InputParams": [
+      "Criteria",
+      "Id",
+      "PageNum",
+      "StartDate",
+      "ItemsPerPage",
+      "CollectionType",
+      "DbName",
+      "GroupId",
+      "TotalCount",
+      "Links",
+      "Results",
+      "IncludeCount",
+      "EndDate",
+      "Type",
+      "Schedule",
+      "State",
+      "ClusterName",
+      "PartitionFields",
+      "CollName",
+      "ApiKeys",
+      "ArchiveOnly",
+      "ArchiveId"
+    ],
+    "RequiredParams": ["GroupId", "ArchiveId", "ClusterName"]
+  },
+  "UpdateFields": {
+    "InputParams": [
+      "CollName",
+      "ApiKeys",
+      "IncludeCount",
+      "EndDate",
+      "Type",
+      "Schedule",
+      "State",
+      "ClusterName",
+      "PartitionFields",
+      "ArchiveOnly",
+      "ArchiveId",
+      "Criteria",
+      "Id",
+      "PageNum",
+      "StartDate",
+      "Links",
+      "Results",
+      "ItemsPerPage",
+      "CollectionType",
+      "DbName",
+      "GroupId",
+      "TotalCount"
+    ],
+    "RequiredParams": ["Criteria"]
+  },
+  "DeleteFields": {
+    "RequiredParams": ["ArchiveId", "ClusterName"]
+  },
+  "ListFields": {}
+}

@@ -1,0 +1,72 @@
+{
+  "CreateFields": {
+    "InputParams": [
+      "MetricThreshold",
+      "Matchers",
+      "Threshold",
+      "EventTypeName",
+      "TypeName",
+      "Updated",
+      "Created",
+      "ApiKeys",
+      "GroupId",
+      "Id",
+      "Links",
+      "Notifications",
+      "Enabled"
+    ],
+    "RequiredParams": ["EventTypeName", "Links"]
+  },
+  "ReadFields": {
+    "InputParams": [
+      "Matchers",
+      "Threshold",
+      "AlertConfigId",
+      "Links",
+      "Notifications",
+      "IncludeCount",
+      "ItemsPerPage",
+      "PageNum",
+      "EventTypeName",
+      "TypeName",
+      "Updated",
+      "MetricThreshold",
+      "TotalCount",
+      "Results",
+      "GroupId",
+      "Id",
+      "Enabled",
+      "Created",
+      "ApiKeys"
+    ],
+    "RequiredParams": ["GroupId", "AlertConfigId"]
+  },
+  "UpdateFields": {
+    "InputParams": [
+      "Enabled",
+      "Created",
+      "ApiKeys",
+      "GroupId",
+      "Id",
+      "AlertConfigId",
+      "Matchers",
+      "Threshold",
+      "IncludeCount",
+      "ItemsPerPage",
+      "PageNum",
+      "Links",
+      "Notifications",
+      "Updated",
+      "MetricThreshold",
+      "TotalCount",
+      "Results",
+      "EventTypeName",
+      "TypeName"
+    ],
+    "RequiredParams": ["EventTypeName", "Links"]
+  },
+  "DeleteFields": {
+    "RequiredParams": ["GroupId", "AlertConfigId"]
+  },
+  "ListFields": {}
+}

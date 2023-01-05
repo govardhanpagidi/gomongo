@@ -1,0 +1,39 @@
+{
+  "CreateFields": {
+    "InputParams": [
+      "OrgId",
+      "ExternalGroupName",
+      "Id",
+      "RoleAssignments",
+      "ApiKeys",
+      "FederationSettingsId"
+    ],
+    "RequiredParams": ["ExternalGroupName", "RoleAssignments"]
+  },
+  "ReadFields": {
+    "InputParams": [
+      "ApiKeys",
+      "FederationSettingsId",
+      "OrgId",
+      "ExternalGroupName",
+      "Id",
+      "RoleAssignments"
+    ],
+    "RequiredParams": ["FederationSettingsId", "Id", "OrgId"]
+  },
+  "UpdateFields": {
+    "InputParams": [
+      "OrgId",
+      "ExternalGroupName",
+      "Id",
+      "RoleAssignments",
+      "ApiKeys",
+      "FederationSettingsId"
+    ],
+    "RequiredParams": ["ExternalGroupName", "RoleAssignments"]
+  },
+  "DeleteFields": {
+    "RequiredParams": ["FederationSettingsId", "Id", "OrgId"]
+  },
+  "ListFields": {}
+}
