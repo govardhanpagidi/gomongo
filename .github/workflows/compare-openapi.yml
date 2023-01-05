@@ -24,6 +24,7 @@ jobs:
       run: | 
         cd cfn-resources
         go mod tidy
+        cd autogen
         ./compare.sh
         
         
